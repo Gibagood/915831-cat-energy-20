@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгений Гибадуллин](https://up.htmlacademy.ru/adaptive/20/user/915831).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Петров] (https://htmlacademy.ru/profile/id617077).
 
 ---
 
