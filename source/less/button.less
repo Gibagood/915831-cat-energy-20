@@ -1,0 +1,50 @@
+@basic_green: #68b738;
+@basic_white: #ffffff;
+@basic_black: #000000;
+@basic_gray: #f2f2f2;
+@special_dark-grey-1: #444444;
+
+.button {
+  background-color: @basic_green;
+  color: @basic_white;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+}
+
+.choose-program__button {
+  position: absolute;
+  display: block;
+  top: 350px;
+  left: 80px;
+  padding-top: 7px 44px 7px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.page-header__button {
+  width: 24px;
+  height: 1.5px;
+  padding: 0;
+  background-color: @basic_black;
+  box-shadow:
+    0 8px 0 0 (@basic_black),
+    0 16px 0 0 (@basic_black);
+}
+
+.catalog__button {
+  width: 280px;
+  min-height: 40px;
+}
+
+.more__button {
+  width: 279px;
+  min-height: 40px;
+  background-color: @basic_gray;
+  color: @special_dark-grey-1;
+}

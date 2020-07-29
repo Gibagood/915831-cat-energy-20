@@ -1,0 +1,38 @@
+.button {
+  background-color: #68b738;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+}
+.choose-program__button {
+  position: absolute;
+  display: block;
+  top: 350px;
+  left: 80px;
+  padding-top: 7px 44px 7px;
+  text-align: center;
+  text-decoration: none;
+}
+.page-header__button {
+  width: 24px;
+  height: 1.5px;
+  padding: 0;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+.catalog__button {
+  width: 280px;
+  min-height: 40px;
+}
+.more__button {
+  width: 279px;
+  min-height: 40px;
+  background-color: #f2f2f2;
+  color: #444444;
+}

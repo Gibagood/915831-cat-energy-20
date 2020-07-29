@@ -1,0 +1,29 @@
+@basic-black-2: #111111;
+@special_dark-grey-1: #444444;
+
+.cooperation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  min-height: 95px;
+  padding-top: 19px;
+
+  &__title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @basic-black-2;
+    margin: 0;
+    margin-left: 19px;
+  }
+
+  &__address {
+    font-family: "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: @special_dark-grey-1;
+    margin: 0;
+  }
+}

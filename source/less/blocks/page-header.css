@@ -1,0 +1,11 @@
+.page-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.page-header__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  margin-top: 12px;
+}
