@@ -15,22 +15,23 @@
   padding: 0;
   padding-left: 20px;
   background-color: @basic_gray;
-}
 
-.diet__item--slimming::before {
-  position: absolute;
-  content: "";
-  min-width: 50px;
-  min-height: 53px;
-  background-image: url("../img/icon-cat-slim.svg");
-}
 
-.diet__item--weight::before {
-  position: absolute;
-  content: "";
-  min-width: 67px;
-  min-height: 50px;
-  background-image: url("../img/icon-cat-pro.svg");
+  &--slimming::before {
+    position: absolute;
+    content: "";
+    min-width: 50px;
+    min-height: 53px;
+    background-image: url("../img/icon-cat-slim.svg");
+  }
+
+  &--weight::before {
+    position: absolute;
+    content: "";
+    min-width: 67px;
+    min-height: 50px;
+    background-image: url("../img/icon-cat-pro.svg");
+  }
 }
 
 .diet__title {
