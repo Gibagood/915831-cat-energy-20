@@ -3,34 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <title>Cat Energy</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="https://via.placeholder.com/150x150" width="33.32" height="37.61" alt="Питание для котов Cat Energy">
-    </a>
-    <a class="page-header__logo-name">
-      <img src="https://via.placeholder.com/150x150" width="101" height="18" alt="Cat Energy">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__button" type="button">
-        <span class="main-nav__button--open"></span>
-        <span class="main-nav__button--close"></span>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img src="img/logo-mobile.svg" width="33.32" height="37.61" alt="Питание для котов">
+      </a>
+      <a class="page-header__logo">
+        <img src="img/logo-footer.svg" width="101" height="18" alt="Cat Energy">
+      </a>
+      <button class="page-header__button" type="button">
+        <span class="page-header__button--open"></span>
+        <span class="page-header__button--close"></span>
       </button>
+    </div>
+    <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a>
+            <a class="site-list__link">
               главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="site-list__link" href="catalog.html">
               каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__link" href="form.html">
               подбор программы
             </a>
           </li>
@@ -42,7 +46,7 @@
     <h1 class="form__title">Подбор программы</h1>
     <span class="form__desc">Заполните анкету, и мы подберем программу питания для вашего кота</span>
     <form class="form" action="https://echo.htmlacademy.ru">
-      <fieldset class="cat">
+      <fieldset class="form__cat cat">
         <legend class="visually-hidden">Данные питомца</legend>
         <div class="cat__name">
           <label class="cat-label" for="cat-name">ИМЯ:*</label>
@@ -57,7 +61,7 @@
           <input type="number" name="cat-age" id="cat-age" placeholder="7">
         </div>
       </fieldset>
-      <fieldset class="cat-diet">
+      <fieldset class="form__cat cat-diet">
         <legend class="visually-hidden">Выбор диеты</legend>
         <label class="cat-label">
           <input class="cat-diet__input" type="radio" name="cat-slimming" value="похудение" checked>
@@ -72,7 +76,7 @@
             Не знаю (Нужен ваш совет)
         </label>
       </fieldset>
-      <fieldset class="cat-owner">
+      <fieldset class="form__cat cat-owner">
         <legend class="fieldset__title">Контактные данные (владельца кота)</legend>
         <div class="cat-owner__mail">
           <label class="cat-label" for="email">E-mail:*</label>
@@ -83,14 +87,14 @@
           <input class="cat-owner__phone-input" type="number" for="phone" name="phone" placeholder="8 (960) 900-60-90" required>
         </div>
       </fieldset>
-      <fieldset class="cat-habits">
+      <fieldset class="form__cat cat-habits">
         <legend class="fieldset__title">Комментарий</legend>
         <div class="cat-habits__comment">
           <label class="cat-label" for="comment">Расскажите обо всех повАдках кота</label>
           <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
         </div>
       </fieldset>
-      <fieldset class="cat-add">
+      <fieldset class="form__cat cat-add">
         <legend class="fieldset__title">Дополнительно</legend>
         <ul class="cat-add__list">
           <li class="cat-add__item">
@@ -116,34 +120,42 @@
     </form>
     <section class="cooperation">
       <h3 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h3>
-      <span class="cooperation__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+      <span class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
     </section>
     <section class="map">
       <h3 class="visually-hidden">Наш адрес на карте</h3>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002783!2d30.32085871567726!3d59.93871916905471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595403754855!5m2!1sru!2sru" width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002783!2d30.32085871567726!3d59.93871916905471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1595403754855!5m2!1sru!2sru" width="320" height="362" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
   </main>
   <footer class="page-footer">
-    <a class="page-header__logo-name">
-      <img src="https://via.placeholder.com/150x150" width="101" height="18" alt="Cat Energy">
+    <a class="page-footer__logo-name">
+      <img src="img/logo-footer.svg" width="101" height="18" alt="Cat Energy">
     </a>
     <div class="page-footer__social social">
       <h3 class="visually-hidden">Социальные сети</h3>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="В Контакте"></a>
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="В Контакте">
+            <img src="img/icon-vk.svg" width="23" height="16" alt="ВКонтакте">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Инстаграм"></a>
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Инстаграм">
+            <img src="img/icon-insta.svg" width="16" height="16" alt="Инстаграм">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Фейсбук"></a>
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Фейсбук">
+            <img src="img/icon-fb.svg" width="10" height="18" alt="Фейсбук">
+          </a>
         </li>
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
       <h4 class="visually-hidden">Разработка сайта</h4>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        HTML Academy
+      </a>
     </div>
   </footer>
 </body>
