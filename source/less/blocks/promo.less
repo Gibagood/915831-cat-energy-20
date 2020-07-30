@@ -1,0 +1,36 @@
+@import "../variables.less";
+
+.promo {
+  min-width: 280px;
+  min-height: 289px;
+  text-align: center;
+  background-color: @basic_green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.promo__desc {
+  position: relative;
+  display: block;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: @basic_white;
+  padding-top: 186px;
+  margin: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 40px;
+    left: 35%;
+    width: 68px;
+    height: 66px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+  }
+}

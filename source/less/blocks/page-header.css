@@ -1,25 +1,25 @@
-@import "../variables.less";
-
+.border-bottom-menu {
+  border-bottom: 1px solid #E6E6E6;
+}
+.border-bottom-catalog {
+  border-bottom: 1px solid #EBEBEB;
+}
 .page-header {
   position: relative;
   display: flex;
   flex-direction: column;
 }
-
 .page-header__wrapper {
-  .border-bottom-menu;
+  border-bottom: 1px solid #E6E6E6;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   margin-top: 12px;
 }
-
 .page-header__button {
   width: 24px;
   height: 1.5px;
   padding: 0;
-  background-color: @basic_black;
-  box-shadow:
-    0 8px 0 0 (@basic_black),
-    0 16px 0 0 (@basic_black);
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
 }

@@ -1,5 +1,3 @@
-@import "../variables.less";
-
 .social__list {
   display: flex;
   justify-content: space-around;

@@ -1,0 +1,15 @@
+.cat-data__name {
+  min-width: 281px;
+}
+.cat-data__label {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+.cat-data__input {
+  height: 52px;
+  border: 1px solid #E7E7E7;
+  box-sizing: border-box;
+}

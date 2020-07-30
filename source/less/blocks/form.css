@@ -1,0 +1,36 @@
+.form {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+  text-align: left;
+}
+.form__title {
+  display: block;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  text-align: left;
+}
+.form__desc {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: left;
+  margin-bottom: 39px;
+}
+.form__cat {
+  border-bottom: 1px solid #EBEBEB;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 281px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}

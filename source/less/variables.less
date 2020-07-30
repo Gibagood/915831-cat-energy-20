@@ -10,6 +10,8 @@
 @special_grey-2: #EBEBEB;
 @special_grey-3: #666666;
 @special_grey-4: #eaeaea;
+@special_grey-5: #E6E6E6;
+@special_grey-6: #E7E7E7;
 @special_dark-grey-1: #444444;
 @special_dark-grey-2: #222222;
 @status_error: #ff8282;
@@ -19,3 +21,25 @@
 @tablet-width: 768px;
 @desktop-width: 1440px;
 @mobile-width-only: 767px;
+
+.border-bottom-menu() {
+  border-bottom: 1px solid @special_grey-5;
+}
+
+.border-bottom-catalog() {
+  border-bottom: 1px solid @special_grey-2;
+}
+
+.input-form() {
+  height: 52px;
+  border: 1px solid @special_grey-6;
+  box-sizing: border-box;
+}
+
+.form-desc() {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @special_dark-grey-1;
+}

@@ -1,53 +1,44 @@
-@import "../variables.less";
-
 .example {
-  background-color: @special_grey-4;
+  background-color: #eaeaea;
   padding-left: 6.25%;
   padding-right: 6.25%;
 }
-
 .example__title {
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
   text-align: left;
-  color: @basic_black;
+  color: #000000;
 }
-
 .example__desc {
   font-family: "Arial", sans-serif;
   font-weight: normal;
-  color: @special_dark-grey-1;
+  color: #444444;
 }
-
 .example__info {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
 }
-
 .example__info-item {
   display: grid;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
 }
-
 .example__number {
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  color: @basic_black;
+  color: #000000;
 }
-
 .example__text {
   font-family: "Arial", sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 12px;
-  color: @special_dark-grey-1;
+  color: #444444;
 }
-
 .example__check {
   display: block;
   font-weight: normal;
@@ -55,9 +46,8 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: @basic_black;
+  color: #000000;
 }
-
 .example__text-img {
   font-weight: normal;
   font-size: 16px;
@@ -65,27 +55,24 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: @basic_black;
+  color: #000000;
 }
-
 .example__interactive {
   display: flex;
   justify-content: center;
 }
-
 .example__range {
   width: 84px;
   height: 14px;
-  background: @basic_white;
-  border: 1px solid @special_grey-1;
+  background: #ffffff;
+  border: 1px solid #cdcdcd;
   box-sizing: border-box;
   border-radius: 6px;
 }
-
 .example__scale {
   width: 35px;
   height: 6px;
-  background: @basic_green;
+  background: #68b738;
   border-radius: 6px;
   margin-top: 3px;
   margin-left: 6px;

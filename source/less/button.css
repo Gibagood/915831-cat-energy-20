@@ -1,8 +1,6 @@
-@import "variables.less";
-
 .button {
-  background-color: @basic_green;
-  color: @basic_white;
+  background-color: #68b738;
+  color: #ffffff;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;

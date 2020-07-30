@@ -1,20 +1,16 @@
-@import "../variables.less";
-
 .catalog {
   text-align: center;
 }
-
 .catalog__title {
-  .border-bottom-catalog;
+  border-bottom: 1px solid #EBEBEB;
   position: relative;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: @basic_black;
+  color: #000000;
   text-align: left;
   padding-left: 6.25%;
 }
-
 .catalog__list {
   display: flex;
   flex-direction: column;
@@ -23,53 +19,46 @@
   margin: 0;
   padding: 0;
 }
-
 .catalog__item {
-  .border-bottom-catalog;
+  border-bottom: 1px solid #EBEBEB;
   position: relative;
   margin-bottom: 19px;
 }
-
 .catalog__item-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
 }
-
 .catalog__content {
   display: grid;
   grid-template-rows: 1fr 1fr;
   justify-items: left;
   min-width: 142px;
 }
-
 .catalog__item-title {
   text-transform: uppercase;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  color: @special_dark-grey-2;
+  color: #222222;
   padding: 0;
   padding-right: 50%;
   margin: 0;
   text-align: left;
 }
-
 .catalog__info {
   font-family: "Arial", sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-  color: @special_dark-grey-1;
+  color: #444444;
   min-width: 141px;
   margin: 0;
 }
-
 .catalog__desc {
   display: flex;
   justify-content: space-between;
 }
-
 .catalog__button {
   width: 280px;
   min-height: 40px;
