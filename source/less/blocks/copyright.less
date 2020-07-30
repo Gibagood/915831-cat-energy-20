@@ -1,0 +1,23 @@
+@special_dark-grey-1: #444444;
+
+.copyright__link {
+  position: relative;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: @special_dark-grey-1;
+  text-decoration: none;
+  margin-left: 20px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 34px;
+    top: 0;
+    left: 200.75%;
+    background-image: url("../img/htmlacademy.svg");
+    background-repeat: no-repeat;
+  }
+}
