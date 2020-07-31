@@ -1,7 +1,13 @@
 @import "../variables.less";
 
+.cat-data {
+  .border-bottom-catalog;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+}
+
 .cat-data__name {
-  min-width: 281px;
+  min-width: 280px;
 }
 
 .cat-data__label {
@@ -9,5 +15,26 @@
 }
 
 .cat-data__input {
+  .form-desc;
   .input-form;
+}
+
+.cat-data__item {
+  display: grid;
+  grid-template-columns: min-content auto;
+  align-items: center;
+  margin-bottom: 13px;
+  column-gap: 14px;
+}
+
+.cat-data__weight {
+  .cat-data__label {
+    min-width: 60px;
+  }
+}
+
+.cat-data__age {
+  .cat-data__label {
+    min-width: 94px;
+  }
 }

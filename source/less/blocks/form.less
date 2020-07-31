@@ -4,8 +4,6 @@
   display: block;
   margin: 0;
   padding: 0;
-  margin-left: 6.25%;
-  margin-right: 6.25%;
   text-align: left;
 }
 
@@ -16,6 +14,7 @@
   line-height: 36px;
   color: @basic_black;
   text-align: left;
+  padding-left: 6.25%;
 }
 
 .form__desc {
@@ -27,10 +26,10 @@
   color: @basic_black;
   text-align: left;
   margin-bottom: 39px;
+  padding-left: 6.25%;
 }
 
 .form__cat {
-  .border-bottom-catalog;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -38,4 +37,39 @@
   margin: 0;
   padding: 0;
   border: none;
+}
+
+.form__fieldset-title {
+  position: relative;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  color: @basic_black;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 240px;
+    width: 50%;
+    height: 2px;
+    background-color: @basic_green;
+  }
+}
+
+.form__button {
+  display: block;
+  width: 280px;
+  min-height: 40px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form__required-fields {
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: @basic_black;
 }
