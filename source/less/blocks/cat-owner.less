@@ -1,0 +1,28 @@
+@import "../variables.less";
+
+.cat-owner {
+  min-width: 280px;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+}
+
+.cat-owner__item {
+  display: grid;
+  grid-template-columns: min-content auto;
+  align-items: center;
+  margin-bottom: 13px;
+  column-gap: 14px;
+}
+
+.cat-owner__label {
+  .form-desc;
+}
+
+.cat-owner__mail .cat-owner__label {
+  min-width: 50px;
+}
+
+.cat-owner__input {
+  .input-form;
+  .form-desc;
+}

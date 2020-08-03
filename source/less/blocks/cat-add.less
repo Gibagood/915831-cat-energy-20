@@ -1,0 +1,42 @@
+@import "../variables.less";
+
+.cat-add {
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+}
+
+.cat-add__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cat-add__label {
+  .form-desc;
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 27px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    border: 1px solid @special_grey-1;
+    cursor: pointer;
+  }
+}
+
+.cat-add__input:checked + .cat-add__label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 6px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/icon-tick.svg");
+  cursor: pointer;
+}

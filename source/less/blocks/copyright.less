@@ -1,23 +1,15 @@
-@special_dark-grey-1: #444444;
+@import "../variables.less";
 
 .copyright__link {
   position: relative;
+  display: flex;
+  justify-content: space-between;
   font-family: "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   color: @special_dark-grey-1;
   text-decoration: none;
-  margin-left: 20px;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 27px;
-    height: 34px;
-    top: 0;
-    left: 200.75%;
-    background-image: url("../img/htmlacademy.svg");
-    background-repeat: no-repeat;
-  }
+  margin-left: 6.25%;
+  margin-right: 6.25%;
 }

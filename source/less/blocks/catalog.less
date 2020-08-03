@@ -1,18 +1,18 @@
-@basic_black: #000000;
-@special_dark-grey-2: #222222;
-@special_dark-grey-1: #444444;
+@import "../variables.less";
 
 .catalog {
   text-align: center;
 }
 
 .catalog__title {
+  .border-bottom-catalog;
+  position: relative;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: @basic_black;
   text-align: left;
-  margin-left: 6.25%;
+  padding-left: 6.25%;
 }
 
 .catalog__list {
@@ -25,6 +25,8 @@
 }
 
 .catalog__item {
+  .border-bottom-catalog;
+  position: relative;
   margin-bottom: 19px;
 }
 
