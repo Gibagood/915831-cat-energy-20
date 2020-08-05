@@ -3,6 +3,20 @@
 .diet {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 3.91%;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5.56%;
+    margin-bottom: 71px;
+    margin-left: 7.64%;
+    margin-right: 7.64%;
+  }
 }
 
 .diet__item {
@@ -15,12 +29,44 @@
   background-color: @basic_gray;
 
 
+  @media (min-width: @tablet-width) {
+    width: 656px;
+    min-height: 372px;
+    padding-left: 52px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 79%;
+    min-height: 374px;
+    padding-left: 52px;
+    padding-right: 51px;
+    margin: 0;
+  }
+
   &--slimming::before {
     position: absolute;
     content: "";
     min-width: 50px;
     min-height: 53px;
     background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: @tablet-width) {
+      width: 200px;
+      height: 211px;
+      top: 80px;
+      right: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 100px;
+      height: 106px;
+      top: 38px;
+      left: 50px;
+    }
   }
 
   &--weight::before {
@@ -29,6 +75,22 @@
     min-width: 67px;
     min-height: 50px;
     background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: @tablet-width) {
+      width: 200px;
+      height: 211px;
+      top: 80px;
+      right: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 134px;
+      height: 100px;
+      top: 38px;
+      left: 50px;
+    }
   }
 }
 
@@ -39,29 +101,78 @@
   text-transform: uppercase;
   margin-left: 91px;
   color: @basic_black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    margin: 0;
+    margin-top: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    margin-bottom: 73px;
+  }
 }
 
 .diet__desc {
   font-family: "Arial", sans-serif;
   font-style: normal;
   color: @special_dark-grey-1;
+
+
+  @media (min-width: @tablet-width) {
+    width: 377px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 467px;
+    margin-bottom: 23px;
+  }
 }
 
 .diet__link {
+  position: relative;
   font-size: 16px;
   line-height: 16px;
   color: @basic_black;
   text-align: center;
   text-transform: uppercase;
 
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 48px;
+  }
+
   &::before {
+    position: absolute;
+    top: 8px;
+    left: 90px;
     content: "";
-    width: 32px;
+    width: 24px;
     height: 10px;
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+
 
     &:hover {
-      background-image: url("../../img/icon-right-arrow-verylong.svg");
+      position: absolute;
+      top: 8px;
+      left: 90px;
+      content: "";
+      width: 32px;
+      height: 10px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      background-repeat: no-repeat;
     }
+  }
+
+  &:active {
+    .main-menu-active;
   }
 }
