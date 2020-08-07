@@ -35,11 +35,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 8.24%;
+    margin-left: 18.64%;
   }
 }
 
-.page-header__logo--text {
+.page-header__text {
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -54,7 +54,7 @@
   }
 }
 
-.page-header__logo--img {
+.page-header__img {
   @media (min-width: @tablet-width) {
     width: 174px;
     height: 51.68px;
@@ -88,7 +88,7 @@
   }
 }
 
-.button-open .page-header__button::before {
+.page-header__button.page-header__button--open::before {
   content: "";
   position: absolute;
   top: -10px;
@@ -101,7 +101,7 @@
     0 16px 0 0 (@basic_black);
 }
 
-.button-close .page-header__button {
+.page-header__button.page-header__button--close {
   width: 24px;
   height: 1.5px;
   background-color: @basic_black;

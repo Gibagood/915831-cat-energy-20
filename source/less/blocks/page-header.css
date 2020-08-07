@@ -1,0 +1,129 @@
+.button-hover-focus {
+  background-color: #5eAA2f;
+}
+.button-active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.main-menu-hover-focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+.main-menu-active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.page-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+  }
+}
+@media (min-width: 1440px) {
+  .page-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+}
+.page-header__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  justify-items: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .page-header__wrapper {
+    border-bottom: 1px solid #E6E6E6;
+  }
+}
+@media (min-width: 768px) {
+  .page-header__wrapper {
+    display: block;
+    margin-left: 3.91%;
+  }
+}
+@media (min-width: 1440px) {
+  .page-header__wrapper {
+    margin-left: 18.64%;
+  }
+}
+@media (min-width: 768px) {
+  .page-header__text {
+    display: none;
+  }
+}
+.page-header__text:hover,
+.page-header__text:focus {
+  opacity: 0.8;
+}
+.page-header__text:active {
+  opacity: 0.6;
+}
+@media (min-width: 768px) {
+  .page-header__img {
+    width: 174px;
+    height: 51.68px;
+  }
+}
+@media (min-width: 1440px) {
+  .page-header__img {
+    width: 202px;
+    height: 59px;
+    margin-top: 53px;
+  }
+}
+.page-header__img:hover,
+.page-header__img:focus {
+  opacity: 0.8;
+}
+.page-header__img:active {
+  opacity: 0.6;
+}
+.page-header__button {
+  position: relative;
+  display: block;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .page-header__button {
+    display: none;
+  }
+}
+.page-header__button.page-header__button--open::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  background-color: #000000;
+  width: 24px;
+  height: 1.5px;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+.page-header__button.page-header__button--close {
+  width: 24px;
+  height: 1.5px;
+  background-color: #000000;
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+.page-header__button.page-header__button--close::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 1.5px;
+  background-color: #000000;
+  transform: rotate(-90deg);
+  box-shadow: none;
+}

@@ -4,10 +4,15 @@
   min-width: 280px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 3.91%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 629px;
+    margin-left: -200px;
   }
 
   @media (min-width: @desktop-width) {
+    display: block;
     margin-left: 7.64%;
     margin-right: 7.64%;
   }
@@ -24,6 +29,11 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
+    margin-left: -93px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -40,7 +50,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 19.92%;
+    column-gap: 37%;
     row-gap: 37px;
     width: 82.03%;
     padding: 0;
