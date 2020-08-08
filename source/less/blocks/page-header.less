@@ -4,6 +4,21 @@
   position: relative;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    align-items: flex-start;
+    margin-top: 0;
+  }
 }
 
 .page-header__wrapper {
@@ -13,15 +28,96 @@
   column-gap: 16px;
   justify-items: center;
   align-items: center;
-  margin-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-left: 3.91%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 18.64%;
+  }
+}
+
+.page-header__text {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__img {
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 51.68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
+    margin-top: 53px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__button {
+  position: relative;
+  display: block;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__button.page-header__button--open::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  background-color: @basic_black;
   width: 24px;
   height: 1.5px;
-  padding: 0;
-  background-color: @basic_black;
   box-shadow:
     0 8px 0 0 (@basic_black),
     0 16px 0 0 (@basic_black);
+}
+
+.page-header__button.page-header__button--close {
+  width: 24px;
+  height: 1.5px;
+  background-color: @basic_black;
+  transform: rotate(45deg);
+  box-shadow: none;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 1.5px;
+    background-color: @basic_black;
+    transform: rotate(-90deg);
+    box-shadow: none;
+  }
 }

@@ -2,6 +2,20 @@
 
 .advantages {
   min-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 629px;
+    margin-left: -200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    margin-left: 7.64%;
+    margin-right: 7.64%;
+  }
 }
 
 .advantages__title {
@@ -10,6 +24,17 @@
   line-height: 40px;
   text-align: center;
   color: @basic_black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin-left: -93px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .advantages__list {
@@ -20,6 +45,23 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 37%;
+    row-gap: 37px;
+    width: 82.03%;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
+    column-gap: 7.86%;
+    width: 84.72%;
+  }
 }
 
 .advantages__item {
@@ -27,6 +69,20 @@
   margin-bottom: 20px;
   margin-left: 31.25%;
   margin-right: 6.56%;
+
+  @media (min-width: @tablet-width) {
+    width: 230px;
+    min-height: 130px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 150px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 250px;
+    padding-right: 0;
+  }
 
   &--nutrients::before {
     position: absolute;
@@ -39,7 +95,36 @@
     background-image: url("../img/advantage-leaf@1x.png");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 20px;
+      left: 0;
+    }
   }
+
+  &--nutrients::after {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      position: absolute;
+      top: -16px;
+      left: 119px;
+      content: "1";
+      width: 112px;
+      height: 280px;
+      font-family: "Oswald", "Arial", serif;
+      font-weight: normal;
+      font-size: 280px;
+      line-height: 280px;
+      text-align: center;
+      color: @basic_gray;
+      z-index: -1;
+    }
+  }
+
 
   &--flour::before {
     position: absolute;
@@ -52,6 +137,34 @@
     background-image: url("../img/advantage-powder@1x.png");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 20px;
+      left: 0;
+    }
+  }
+
+  &--flour::after {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      position: absolute;
+      top: -16px;
+      left: 119px;
+      content: "2";
+      width: 134px;
+      height: 280px;
+      font-family: "Oswald", "Arial", serif;
+      font-weight: normal;
+      font-size: 280px;
+      line-height: 280px;
+      text-align: center;
+      color: @basic_gray;
+      z-index: -1;
+    }
   }
 
   &--eating::before {
@@ -65,6 +178,34 @@
     background-image: url("../img/advantage-dining@1x.png");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 20px;
+      left: 0;
+    }
+  }
+
+  &--eating::after {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      position: absolute;
+      top: -16px;
+      left: 119px;
+      content: "3";
+      width: 134px;
+      height: 280px;
+      font-family: "Oswald", "Arial", serif;
+      font-weight: normal;
+      font-size: 280px;
+      line-height: 280px;
+      text-align: center;
+      color: @basic_gray;
+      z-index: -1;
+    }
   }
 
   &--better::before {
@@ -78,5 +219,33 @@
     background-image: url("../img/advantage-clock@1x.png");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 20px;
+      left: 0;
+    }
+  }
+
+  &--better::after {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      position: absolute;
+      top: -16px;
+      left: 119px;
+      content: "4";
+      width: 136px;
+      height: 280px;
+      font-family: "Oswald", "Arial", serif;
+      font-weight: normal;
+      font-size: 280px;
+      line-height: 280px;
+      text-align: center;
+      color: @basic_gray;
+      z-index: -1;
+    }
   }
 }

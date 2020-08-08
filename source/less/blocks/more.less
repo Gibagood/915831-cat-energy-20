@@ -1,10 +1,29 @@
 @import "../variables.less";
 
 .more {
-  min-width: 279px;
+  width: 279px;
   min-height: 158px;
   margin: 0 auto;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    background-color: @basic_white;
+    border: 2px solid @basic_gray;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    margin: 0;
+  }
+}
+
+.more__img {
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin-top: 70px;
+  }
 }
 
 .more__title {
@@ -14,6 +33,14 @@
   text-align: center;
   text-transform: uppercase;
   color: @basic-black-2;
+
+  @media (min-width: @tablet-width) {
+    width: 134px;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
 }
 
 .more__desc {
@@ -26,6 +53,14 @@
   text-align: center;
   color: @special_dark-grey-1;
   margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    width: 167px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 auto;
+    margin-top: 23px;
+  }
 }
 
 .more__button {
@@ -33,4 +68,26 @@
   min-height: 40px;
   background-color: @basic_gray;
   color: @special_dark-grey-1;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 249px;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-top: 107px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: @special_grey-2;
+  }
+
+  &:active {
+    .main-menu-active;
+    background-color: @special_grey-2;
+  }
 }

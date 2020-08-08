@@ -23,11 +23,15 @@
 @mobile-width-only: 767px;
 
 .border-bottom-menu() {
-  border-bottom: 1px solid @special_grey-5;
+  @media (max-width: @tablet-width) {
+    border-bottom: 1px solid @special_grey-5;
+  }
 }
 
 .border-bottom-catalog() {
-  border-bottom: 1px solid @special_grey-2;
+  @media (max-width: @tablet-width) {
+    border-bottom: 1px solid @special_grey-2;
+  }
 }
 
 .input-form() {
@@ -44,4 +48,20 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @special_dark-grey-1;
+}
+
+.button-hover-focus {
+  background-color: @basic_green-2;
+}
+
+.button-active {
+  color: fade(@basic_white, 30%);
+}
+
+.main-menu-hover-focus {
+  color: fade(@basic_black, 60%);
+}
+
+.main-menu-active {
+  color: fade(@basic_black, 30%);
 }

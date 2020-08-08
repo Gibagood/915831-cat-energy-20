@@ -12,6 +12,20 @@
   margin: 0;
   margin-bottom: 197px;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    background-color: @basic_white;
+    background-image: none;
+    margin-left: 15.23%;
+    margin-bottom: 490px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 464px;
+    margin-top: -470px;
+    margin-bottom: 286px;
+    margin-left: 13.19%;
+  }
 }
 
 .choose-program__title {
@@ -22,6 +36,23 @@
   color: @basic_white;
   padding-left: 6.25%;
   padding-right: 6.25%;
+
+  @media (min-width: @tablet-width) {
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    color: @basic_black;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    padding-right: 150px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    padding-right: 50px;
+  }
 }
 
 .choose-program__subtitle {
@@ -32,6 +63,14 @@
   text-transform: uppercase;
   text-align: center;
   color: @basic_white;
+
+  @media (min-width: @tablet-width) {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: @basic_black;
+    text-align: left;
+  }
 }
 
 .choose-program__img-button-wrapper {
@@ -48,6 +87,23 @@
     height: 270px;
     background-image: url("../img/index-can-mobile@1x.png");
     background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      top: 30px;
+      left: -70px;
+      background-image: url("../img/index-can-tablet@1x.jpg");
+      width: 709px;
+      height: 609px;
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/index-can-desktop@1x.png");
+      width: 552px;
+      height: 499px;
+      top: -240px;
+      left: 360px;
+    }
   }
 }
 
@@ -60,4 +116,21 @@
   padding: 10px 44px 4px;
   text-align: center;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    width: 202px;
+    min-height: 26px;
+    left: 0;
+    top: 50px;
+    padding: 5px 26px;
+  }
+
+  &:hover,
+  &:focus {
+    .button-hover-focus;
+  }
+
+  &:active {
+    .button-active;
+  }
 }
