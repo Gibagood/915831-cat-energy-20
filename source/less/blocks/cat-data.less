@@ -4,6 +4,10 @@
   .border-bottom-catalog;
   padding-left: 6.25%;
   padding-right: 6.25%;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .cat-data__name {
@@ -12,11 +16,21 @@
 
 .cat-data__label {
   .form-desc;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .cat-data__input {
   .form-desc;
   .input-form;
+  padding-left: 15px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 18px;
+  }
 }
 
 .cat-data__item {
@@ -25,6 +39,15 @@
   align-items: center;
   margin-bottom: 13px;
   column-gap: 14px;
+
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: max-content auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .cat-data__weight .cat-data__label {

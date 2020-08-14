@@ -7,17 +7,17 @@ menuBtn.addEventListener('click', event => {
 
     if (openState) {
 
-        menuBtn.classList.remove('.page-header__button--open');
+        menuBtn.classList.remove('page-header__button--open');
 
-        menuBtn.classList.add('.page-header__button--close');
+        menuBtn.classList.add('page-header__button--close');
 
         menuBtn.setAttribute('aria-label', 'Закрыть меню');
 
     } else {
 
-        menuBtn.classList.remove('.page-header__button--close');
+        menuBtn.classList.remove('page-header__button--close');
 
-        menuBtn.classList.add('.page-header__button--open');
+        menuBtn.classList.add('page-header__button--open');
 
         menuBtn.setAttribute('aria-label', 'Открыть меню');
 
@@ -31,6 +31,6 @@ menuBtn.addEventListener('click', event => {
 
 
 
-menuBtn.classList.add('.page-header__button--open');
+menuBtn.classList.add('page-header__button--open');
 
 menuBtn.setAttribute('aria-label', 'Открыть меню');

@@ -3,12 +3,67 @@
 .cat-add {
   padding-left: 6.25%;
   padding-right: 6.25%;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.cat-add__title {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 42px;
+    left: 51vw;
+    width: 40vw;
+    height: 2px;
+    background-color: @basic_green;
+
+    @media (min-width: @tablet-width) {
+      top: 23px;
+      left: 30vw;
+      width: 59vw;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 16vw;
+      width: 75vw;
+    }
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      content: "";
+      top: 23px;
+      left: -9vw;
+      width: 8vw;
+      height: 2px;
+      background-color: @basic_green;
+    }
+  }
 }
 
 .cat-add__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    min-width: 565px;
+    min-height: min-content;
+    row-gap: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 104px;
+  }
 }
 
 .cat-add__label {
@@ -17,6 +72,12 @@
   padding-left: 36px;
   margin-bottom: 27px;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 65px;
+  }
 
   &::before {
     content: "";
@@ -27,6 +88,12 @@
     height: 26px;
     border: 1px solid @special_grey-1;
     cursor: pointer;
+
+
+    @media (min-width: @tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 
@@ -39,4 +106,9 @@
   height: 14px;
   background-image: url("../img/icon-tick.svg");
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    top: 6px;
+    left: 12px;
+  }
 }

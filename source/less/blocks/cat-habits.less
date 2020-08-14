@@ -1,14 +1,65 @@
 @import "../variables.less";
 
 .cat-habits {
-  padding-left: 6.25%;
-  padding-right: 6.25%;
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.cat-habits__title {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 42px;
+    left: 46vw;
+    width: 45vw;
+    height: 2px;
+    background-color: @basic_green;
+
+    @media (min-width: @tablet-width) {
+      top: 23px;
+      left: 27vw;
+      width: 62vw;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 14vw;
+      width: 77vw;
+    }
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      content: "";
+      top: 23px;
+      left: -9vw;
+      width: 8vw;
+      height: 2px;
+      background-color: @basic_green;
+    }
+  }
 }
 
 .cat-habits__textarea {
   .form-desc;
-  min-width: 280px;
+  width: 85.5vw;
   min-height: 150px;
   text-align: center;
   padding-top: 13px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 631px;
+    height: 174px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1220px;
+  }
 }
