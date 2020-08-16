@@ -39,3 +39,13 @@
     min-height: auto;
   }
 }
+
+.main-nav--open {
+  display: block;
+}
+
+.main-nav--close {
+  @media (max-width: @tablet-width - 1px) {
+    display: none;
+  }
+}

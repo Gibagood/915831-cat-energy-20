@@ -4,6 +4,55 @@
   min-width: 280px;
   padding-left: 6.25%;
   padding-right: 6.25%;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.cat-owner__title {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 42px;
+    left: 63vw;
+    width: 28vw;
+    height: 2px;
+    background-color: @basic_green;
+
+    @media (min-width: @tablet-width) {
+      top: 23px;
+      left: 69vw;
+      width: 20vw;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 38vw;
+      width: 53vw;
+    }
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      content: "";
+      top: 23px;
+      left: -9vw;
+      width: 8vw;
+      height: 2px;
+      background-color: @basic_green;
+    }
+  }
+}
+
+.cat-owner__mail-phone {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5.56vw;
+  }
 }
 
 .cat-owner__item {
@@ -12,17 +61,94 @@
   align-items: center;
   margin-bottom: 13px;
   column-gap: 14px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: max-content auto;
+    column-gap: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 39.58vw;
+  }
 }
+
 
 .cat-owner__label {
   .form-desc;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-.cat-owner__mail .cat-owner__label {
+.cat-owner__label--mail {
+  position: relative;
   min-width: 50px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 75.31vw;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 14px;
+
+    @media (min-width: @tablet-width) {
+      width: 22px;
+      height: 16px;
+      top: 8px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 5px;
+      left: 37.1vw;
+      width: 25px;
+      height: 20px;
+    }
+  }
+}
+
+.cat-owner__label--phone {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 75.31vw;
+    background-image: url("../../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 14px;
+
+    @media (min-width: @tablet-width) {
+      width: 22px;
+      height: 16px;
+      top: 8px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 5px;
+      left: 37.1vw;
+      width: 25px;
+      height: 20px;
+    }
+  }
 }
 
 .cat-owner__input {
   .input-form;
   .form-desc;
+  padding-left: 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 20px;
+  }
 }

@@ -35,7 +35,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 18.64%;
+    margin-left: 7.64vw;
+    margin-bottom: 73px;
   }
 }
 
@@ -88,7 +89,7 @@
   }
 }
 
-.page-header__button.page-header__button--open::before {
+.page-header__button.page-header__button--close::before {
   content: "";
   position: absolute;
   top: -10px;
@@ -101,7 +102,7 @@
     0 16px 0 0 (@basic_black);
 }
 
-.page-header__button.page-header__button--close {
+.page-header__button.page-header__button--open {
   width: 24px;
   height: 1.5px;
   background-color: @basic_black;

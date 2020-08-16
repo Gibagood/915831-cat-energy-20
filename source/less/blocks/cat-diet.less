@@ -3,9 +3,18 @@
 .cat-diet {
   .border-bottom-catalog;
   display: block;
-  margin-top: 20px;
   padding-left: 6.25%;
   padding-right: 6.25%;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid @special_grey-6;
+    padding: 36px 27px 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 26px 27px 0;
+    height: min-content;
+  }
 }
 
 .cat-diet__label {
@@ -14,6 +23,11 @@
   padding-left: 36px;
   margin-bottom: 27px;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &::before {
     content: "";
@@ -25,6 +39,11 @@
     border: 1px solid @special_grey-1;
     border-radius: 50%;
     cursor: pointer;
+
+    @media (min-width: @tablet-width) {
+      top: 0;
+      left: 0;
+    }
   }
 }
 
@@ -38,4 +57,9 @@
   background-color: @basic_green;
   border-radius: 50%;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    top: 9px;
+    left: 9px;
+  }
 }
