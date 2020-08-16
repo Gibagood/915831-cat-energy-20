@@ -52,15 +52,15 @@
       <div class="form__data-diet">
         <fieldset class="form__cat cat-data">
           <legend class="visually-hidden">Данные питомца</legend>
-          <div class="cat-data__item cat-data__name">
+          <div class="cat-data__item cat-data__item--name">
             <label class="cat-data__label" for="cat-name">ИМЯ:*</label>
             <input class="cat-data__input" type="text" name="cat-name" id="cat-name" placeholder="барсик" required>
           </div>
-          <div class="cat-data__item cat-data__weight">
+          <div class="cat-data__item cat-data__item--weight">
             <label class="cat-data__label" for="cat-weight">Вес (кг):*</label>
             <input class="cat-data__input" type="number" name="cat-weight" id="cat-weight" placeholder="7" required>
           </div>
-          <div class="cat-data__item cat-data__age">
+          <div class="cat-data__item cat-data__item--age">
             <label class="cat-data__label" for="cat-age">Возраст (лет):</label>
             <input class="cat-data__input" type="number" name="cat-age" id="cat-age" placeholder="7">
           </div>
@@ -84,11 +84,11 @@
       <fieldset class="form__cat cat-owner">
         <legend class="form__fieldset-title cat-owner__title">Контактные данные <br>(владельца кота)</legend>
         <div class="cat-owner__mail-phone">
-          <div class="cat-owner__mail cat-owner__item">
+          <div class=" cat-owner__item cat-owner__item--mail">
             <label class="cat-owner__label cat-owner__label--mail" for="email">E-mail:*</label>
             <input class="cat-owner__input" type="email" for="email" name="email" placeholder="kuklachev@gmail.com" required>
           </div>
-          <div class="cat-owner__phone cat-owner__item">
+          <div class="cat-owner__item cat-owner__item--phone">
             <label class="cat-owner__label cat-owner__label--phone" for="phone">Телефон:*</label>
             <input class="cat-owner__input" type="number" for="phone" name="phone" placeholder="8 (960) 900-60-90" required>
           </div>
@@ -170,5 +170,6 @@
       </a>
     </div>
   </footer>
+  <script src="./js/open-menu.js"></script>
 </body>
 </html>
