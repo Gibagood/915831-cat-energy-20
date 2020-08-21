@@ -1,0 +1,27 @@
+.button-hover-focus {
+  background-color: #5eAA2f;
+}
+.button-active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.main-menu-hover-focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+.main-menu-active {
+  color: rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 1440px) {
+  .location {
+    position: relative;
+  }
+}
+.location__cooperation {
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+}
+@media (min-width: 768px) {
+  .location__cooperation {
+    margin-left: 9.3vw;
+    margin-right: 7.31vw;
+  }
+}

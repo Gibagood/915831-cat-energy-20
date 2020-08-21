@@ -1,0 +1,35 @@
+.button-hover-focus {
+  background-color: #5eAA2f;
+}
+.button-active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.main-menu-hover-focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+.main-menu-active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.copyright__link {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-decoration: none;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+}
+@media (min-width: 768px) {
+  .copyright__link {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  .copyright__desc {
+    margin-right: 19px;
+  }
+}

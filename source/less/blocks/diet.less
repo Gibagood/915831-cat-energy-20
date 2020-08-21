@@ -4,9 +4,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+  margin-bottom: 7px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 3.91%;
+    min-width: 708px;
+    margin-left: 3.91vw;
+    margin-right: 3.91vw;
+    margin-bottom: 15px;
   }
 
   @media (min-width: @desktop-width) {
@@ -22,6 +28,7 @@
 .diet__item {
   position: relative;
   width: 280px;
+  min-height: 266px;
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 0;
@@ -48,6 +55,8 @@
   &--slimming::before {
     position: absolute;
     content: "";
+    top: 21px;
+    left: 22px;
     min-width: 50px;
     min-height: 53px;
     background-image: url("../img/icon-cat-slim.svg");
@@ -57,8 +66,8 @@
     @media (min-width: @tablet-width) {
       width: 200px;
       height: 211px;
-      top: 80px;
-      right: 50px;
+      top: 81px;
+      left: 446px;
     }
 
     @media (min-width: @desktop-width) {
@@ -70,8 +79,10 @@
   }
 
   &--weight::before {
-    position: absolute;
     content: "";
+    position: absolute;
+    top: 24px;
+    left: 13px;
     min-width: 67px;
     min-height: 50px;
     background-image: url("../img/icon-cat-pro.svg");
@@ -79,17 +90,17 @@
     background-size: contain;
 
     @media (min-width: @tablet-width) {
-      width: 200px;
-      height: 211px;
-      top: 80px;
-      right: 50px;
+      width: 268px;
+      height: 200px;
+      top: 91px;
+      left: 411px;
     }
 
     @media (min-width: @desktop-width) {
       width: 134px;
       height: 100px;
-      top: 38px;
-      left: 50px;
+      top: 92px;
+      left: 413px;
     }
   }
 }
@@ -99,7 +110,9 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  margin-left: 91px;
+  margin: 0;
+  margin-left: 71px;
+  margin-top: 30px;
   color: @basic_black;
 
   @media (min-width: @tablet-width) {
@@ -120,12 +133,15 @@
   font-family: "Arial", sans-serif;
   font-style: normal;
   color: @special_dark-grey-1;
-
+  margin: 0;
+  margin-top: 29px;
+  width: 81.07%;
 
   @media (min-width: @tablet-width) {
     width: 377px;
     font-size: 16px;
     line-height: 24px;
+    margin-top: 25px;
   }
 
   @media (min-width: @desktop-width) {
@@ -134,45 +150,57 @@
   }
 }
 
+.diet__desc--weight {
+  @media (min-width: @tablet-width) {
+    width: 340px;
+  }
+}
+
 .diet__link {
   position: relative;
+  display: block;
   font-size: 16px;
   line-height: 16px;
-  color: @basic_black;
-  text-align: center;
+  color: #000000;
+  text-align: left;
   text-transform: uppercase;
-
+  margin-top: 43px;
+  text-decoration: none;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-top: 48px;
+    margin-top: 51px;
   }
 
   &::before {
-    position: absolute;
-    top: 8px;
-    left: 90px;
     content: "";
+    position: absolute;
+    top: 2px;
+    left: 100px;
     width: 24px;
     height: 10px;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
 
-
-    &:hover {
-      position: absolute;
-      top: 8px;
-      left: 90px;
-      content: "";
-      width: 32px;
-      height: 10px;
-      background-image: url("../img/icon-right-arrow-verylong.svg");
-      background-repeat: no-repeat;
+    @media (min-width: @tablet-width) {
+      top: 10px;
+      left: 134px;
     }
   }
 
   &:active {
     .main-menu-active;
   }
+}
+
+.diet__link:hover::before {
+  position: absolute;
+  top: 2px;
+  left: 100px;
+  content: "";
+  width: 32px;
+  height: 10px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-repeat: no-repeat;
 }

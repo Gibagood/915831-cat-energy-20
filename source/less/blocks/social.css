@@ -1,5 +1,15 @@
-@import "../variables.less";
-
+.button-hover-focus {
+  background-color: #5eAA2f;
+}
+.button-active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.main-menu-hover-focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+.main-menu-active {
+  color: rgba(0, 0, 0, 0.3);
+}
 .social__list {
   display: flex;
   justify-content: center;
@@ -8,8 +18,9 @@
   list-style: none;
   margin: 0;
   padding: 0;
-
-  @media (min-width: @tablet-width) {
+}
+@media (min-width: 768px) {
+  .social__list {
     margin-left: 17px;
     margin-bottom: 8px;
   }
@@ -21,32 +32,29 @@
     height: 29px;
   }
 } */
-
 .social__link:hover {
-  fill: @basic_green;
+  fill: #68b738;
 }
-
-.social__link--vkontakte {
-  @media (min-width: @tablet-width) {
+@media (min-width: 768px) {
+  .social__link--vkontakte {
     width: 29.89px;
     height: 18px;
   }
 }
-
 .social__link--instagram {
   margin-left: 11vw;
   margin-right: 13vw;
-
-  @media (min-width: @tablet-width) {
+}
+@media (min-width: 768px) {
+  .social__link--instagram {
     width: 23px;
     height: 23px;
     margin-left: 30px;
     margin-right: 29px;
   }
 }
-
-.social__link--facebook {
-  @media (min-width: @tablet-width) {
+@media (min-width: 768px) {
+  .social__link--facebook {
     width: 13.83px;
     height: 30.97px;
   }

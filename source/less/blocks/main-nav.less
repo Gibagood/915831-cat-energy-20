@@ -2,7 +2,7 @@
 
 .main-nav {
   @media (min-width: @tablet-width) {
-    margin-right: 3.91%;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -30,18 +30,20 @@
 }
 
 .main-nav__list {
-  min-height: 264px;
+  list-style: none;
   margin: 0 auto;
   padding: 0;
-  list-style: none;
+  margin-top: 13px;
 
   @media (min-width: @tablet-width) {
     min-height: auto;
+    margin-top: 15px;
   }
 }
 
 .main-nav--open {
   display: block;
+  margin-top: 13px;
 }
 
 .main-nav--close {
