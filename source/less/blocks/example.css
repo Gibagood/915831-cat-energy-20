@@ -30,10 +30,10 @@
     min-height: 462px;
     border: none;
     padding-top: 0;
-    padding-left: 7.64%;
-    padding-right: 7.64%;
+    padding-left: 7.64vw;
+    padding-right: 7.64vw;
     background-color: #eaeaea;
-    margin-top: 150px;
+    margin-top: 203px;
   }
 }
 .example__content {
@@ -69,7 +69,7 @@
 }
 @media (min-width: 1440px) {
   .example__title {
-    margin-top: -150px;
+    margin-top: -136px;
   }
 }
 .example__desc {
@@ -90,7 +90,7 @@
 @media (min-width: 1440px) {
   .example__desc {
     width: 436px;
-    margin-top: 146px;
+    margin-top: 147px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -110,7 +110,7 @@
 @media (min-width: 1440px) {
   .example__info-wrapper {
     flex-direction: column;
-    margin-top: 69px;
+    margin-top: 68px;
   }
 }
 .example__info {
@@ -129,6 +129,7 @@
 @media (min-width: 1440px) {
   .example__info {
     justify-items: flex-start;
+    margin-bottom: 51px;
   }
 }
 .example__info-item {
@@ -245,7 +246,7 @@
 }
 @media (min-width: 1440px) {
   .example__check-sum {
-    padding-left: 63px;
+    padding-left: 59px;
   }
 }
 .example__visual {
@@ -262,13 +263,17 @@
 }
 @media (min-width: 1440px) {
   .example__visual {
-    margin-top: -160px;
+    margin-top: -189px;
   }
 }
 .example__img-wrapper {
   position: relative;
   margin-bottom: 33px;
-  padding-left: 3.91vw;
+}
+@media (min-width: 1440px) {
+  .example__img-wrapper {
+    margin-bottom: 53px;
+  }
 }
 .example__before-img {
   display: block;
@@ -279,6 +284,16 @@
   .example__before-img {
     width: 690px;
     height: 517px;
+    padding: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .example__before-img {
+    min-width: 684px;
+    height: 518px;
+    padding: 0;
+    margin-right: -52px;
+    margin-top: -1px;
   }
 }
 .example__after-img {
@@ -294,7 +309,15 @@
   .example__after-img {
     width: 690px;
     height: 517px;
-    left: 31px;
+    left: 21px;
+  }
+}
+@media (min-width: 1440px) {
+  .example__after-img {
+    min-width: 695px;
+    height: 515px;
+    left: -4px;
+    top: 1px;
   }
 }
 .example__interactive {

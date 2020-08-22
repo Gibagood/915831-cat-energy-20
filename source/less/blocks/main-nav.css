@@ -23,11 +23,10 @@
 @media (min-width: 1440px) {
   .main-nav-img {
     min-width: 100%;
-    min-height: 696px;
+    min-height: 694px;
     background-color: #68b738;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: right;
     background-size: cover;
     margin: 0;
   }
@@ -47,6 +46,11 @@
   .main-nav__list {
     min-height: auto;
     margin-top: 15px;
+  }
+}
+@media (min-width: 1440px) {
+  .main-nav__list {
+    margin-top: 70px;
   }
 }
 .main-nav--open {

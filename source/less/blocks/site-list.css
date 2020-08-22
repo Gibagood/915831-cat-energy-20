@@ -27,7 +27,6 @@
 @media (min-width: 1440px) {
   .site-list {
     justify-content: center;
-    margin-top: 71px;
   }
 }
 .site-list__item {
@@ -47,14 +46,8 @@
 }
 @media (min-width: 1440px) {
   .site-list__item {
-    margin-left: 30px;
+    margin-left: 35px;
   }
-}
-.site-list__item--active {
-  /*
-  @media (min-width: @desktop-width) {
-    border: none;
-  } */
 }
 @media (min-width: 768px) {
   .site-list__item--active {
@@ -64,6 +57,7 @@
 @media (min-width: 1440px) {
   .site-list__item--active-index {
     border-bottom: 2px solid #ffffff;
+    padding-bottom: 3px;
   }
 }
 .site-list__link {

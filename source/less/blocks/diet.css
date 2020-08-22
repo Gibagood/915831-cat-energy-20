@@ -30,10 +30,9 @@
   .diet {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 5.56%;
+    column-gap: 44px;
     margin-bottom: 71px;
-    margin-left: 7.64%;
-    margin-right: 7.64%;
+    margin-left: 7.64vw;
   }
 }
 .diet__item {
@@ -57,7 +56,7 @@
 }
 @media (min-width: 1440px) {
   .diet__item {
-    width: 79%;
+    width: 467px;
     min-height: 374px;
     padding-left: 52px;
     padding-right: 51px;
@@ -87,8 +86,8 @@
   .diet__item--slimming::before {
     width: 100px;
     height: 106px;
-    top: 38px;
-    left: 50px;
+    top: 41px;
+    left: 52px;
   }
 }
 .diet__item--weight::before {
@@ -112,10 +111,10 @@
 }
 @media (min-width: 1440px) {
   .diet__item--weight::before {
-    width: 134px;
-    height: 100px;
-    top: 92px;
-    left: 413px;
+    width: 135px;
+    height: 102px;
+    top: 46px;
+    left: 33px;
   }
 }
 .diet__title {
@@ -140,7 +139,13 @@
 @media (min-width: 1440px) {
   .diet__title {
     text-align: center;
-    margin-bottom: 73px;
+    margin-bottom: 74px;
+    margin-left: 21px;
+  }
+}
+@media (min-width: 1440px) {
+  .diet__title--weight {
+    margin-left: 61px;
   }
 }
 .diet__desc {
@@ -170,6 +175,11 @@
     width: 340px;
   }
 }
+@media (min-width: 1440px) {
+  .diet__desc--weight {
+    width: 467px;
+  }
+}
 .diet__link {
   position: relative;
   display: block;
@@ -188,6 +198,11 @@
     margin-top: 51px;
   }
 }
+@media (min-width: 1440px) {
+  .diet__link {
+    margin-top: 26px;
+  }
+}
 .diet__link::before {
   content: "";
   position: absolute;
@@ -204,6 +219,11 @@
     left: 134px;
   }
 }
+@media (min-width: 1440px) {
+  .diet__link::before {
+    left: 132px;
+  }
+}
 .diet__link:active {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -216,4 +236,10 @@
   height: 10px;
   background-image: url("../img/icon-right-arrow-verylong.svg");
   background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .diet__link:hover::before {
+    top: 10px;
+    left: 134px;
+  }
 }

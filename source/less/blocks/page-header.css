@@ -33,7 +33,7 @@
     grid-template-columns: 1fr 1fr;
     justify-items: start;
     align-items: flex-start;
-    margin-top: 0;
+    margin: 0;
   }
 }
 .page-header__wrapper {
@@ -49,8 +49,9 @@
 }
 @media (min-width: 1440px) {
   .page-header__wrapper {
-    margin-left: 7.64vw;
+    min-width: 610px;
     margin-bottom: 73px;
+    padding-left: 7.64vw;
   }
 }
 .page-header__logo {
