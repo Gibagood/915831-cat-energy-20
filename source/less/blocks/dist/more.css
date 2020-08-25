@@ -11,10 +11,9 @@
   color: rgba(0, 0, 0, 0.3);
 }
 .more {
-  width: 279px;
-  min-height: 158px;
-  margin: 0 auto;
-  margin-top: 26px;
+  width: 321px;
+  height: 158px;
+  margin: 0;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -34,7 +33,7 @@
   .more__img {
     width: 60px;
     height: 60px;
-    margin-top: 70px;
+    margin-top: 53px;
   }
 }
 .more__title {
@@ -54,7 +53,7 @@
     font-size: 20px;
     line-height: 22px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 46px;
   }
 }
 .more__desc {
@@ -88,9 +87,10 @@
 @media (min-width: 768px) {
   .more__button {
     width: 249px;
+    height: 40px;
     margin: 0 auto;
     font-size: 16px;
-    margin-top: 107px;
+    margin-top: 87px;
   }
 }
 @media (min-width: 1440px) {

@@ -15,7 +15,7 @@
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   min-height: 84px;
-  padding-top: 26px;
+  padding-top: 28px;
 }
 @media (min-width: 768px) {
   .cooperation {
@@ -45,7 +45,7 @@
 .cooperation__title {
   font-weight: normal;
   font-size: 16px;
-  line-height: 25px;
+  line-height: 21px;
   text-transform: uppercase;
   color: #111111;
   margin: 0;

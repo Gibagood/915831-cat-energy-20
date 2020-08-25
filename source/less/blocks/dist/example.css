@@ -37,8 +37,8 @@
   }
 }
 .example__content {
-  padding-left: 6.25%;
-  padding-right: 6.25%;
+  padding-left: 6.25vw;
+  padding-right: 6.25vw;
   margin-bottom: 34px;
 }
 @media (min-width: 768px) {
@@ -118,7 +118,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  column-gap: 30px;
+  column-gap: 25px;
   margin: 0;
 }
 @media (min-width: 768px) {
@@ -163,8 +163,8 @@
   }
 }
 .example__number--kilo {
-  padding-left: 41px;
-  padding-right: 41px;
+  padding-left: 39px;
+  padding-right: 46px;
 }
 @media (min-width: 768px) {
   .example__number--kilo {
@@ -175,7 +175,7 @@
   }
 }
 .example__number--days {
-  padding-left: 20px;
+  padding-left: 22px;
   padding-right: 20px;
 }
 @media (min-width: 768px) {
@@ -215,9 +215,16 @@
   }
 }
 .example__text--days {
-  min-width: 133px;
-  padding-left: 4px;
-  padding-right: 5px;
+  min-width: 59px;
+  padding-left: 15px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .example__text--days {
+    min-width: 127px;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
 }
 .example__check {
   display: block;
@@ -271,9 +278,15 @@
   position: relative;
   margin-bottom: 33px;
 }
+@media (min-width: 768px) {
+  .example__img-wrapper {
+    margin-left: 30px;
+  }
+}
 @media (min-width: 1440px) {
   .example__img-wrapper {
     margin-bottom: 53px;
+    margin-left: 0;
   }
 }
 .example__before-img {
@@ -310,7 +323,7 @@
   .example__after-img {
     width: 690px;
     height: 517px;
-    left: 21px;
+    left: 0;
   }
 }
 @media (min-width: 1440px) {

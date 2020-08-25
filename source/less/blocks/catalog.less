@@ -6,6 +6,10 @@
   align-items: center;
   text-align: center;
 
+  @media (min-width: @tablet-width){
+    margin-bottom: 66px;
+  }
+
   @media (min-width: @desktop-width) {
     display: block;
     margin-left: 7.64%;
@@ -33,7 +37,8 @@
     line-height: 60px;
     padding-left: 3.91%;
     padding-right: 292px;
-    margin-bottom: 164px;
+    margin-bottom: 124px;
+    margin-top: 1px;
   }
 
   @media (min-width: @desktop-width) {
@@ -52,10 +57,11 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 7.81%;
+    column-gap: 9.21%;
     row-gap: 140px;
     text-align: center;
     justify-items: center;
+    margin-left: 2.1vw;
   }
 
   @media (min-width: @desktop-width) {
@@ -77,7 +83,7 @@
     align-items: center;
     text-align: -webkit-center;
     width: 324px;
-    min-height: 511px;
+    min-height: 406px;
     background-color: @basic_gray;
     margin: 0;
   }
@@ -96,6 +102,7 @@
   @media (min-width: @tablet-width) {
     display: block;
     position: relative;
+    margin-top: 28px;
   }
 }
 
@@ -108,8 +115,8 @@
     width: 100%;
     height: auto;
     position: absolute;
-    bottom: 268px;
-    left: 0;
+    bottom: 193px;
+    left: -21px;
   }
 }
 
@@ -120,9 +127,10 @@
   min-width: 142px;
 
   @media (min-width: @tablet-width) {
+    grid-template-rows: min-content min-content;
     justify-items: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 104px;
   }
 
   @media (min-width: @desktop-width) {
@@ -165,6 +173,7 @@
     width: 250px;
     font-size: 16px;
     line-height: 16px;
+    padding-top: 15px;
   }
 
   @media (min-width: @desktop-width) {
@@ -178,9 +187,9 @@
 
   @media (min-width: @tablet-width) {
     border-bottom: 1px solid @special_grey-1;
-    margin-bottom: 5px;
-    padding-bottom: 9px;
-    padding-top: 9px;
+    margin-bottom: 2px;
+    padding-bottom: 6px;
+    padding-top: 5px;
   }
 }
 
@@ -194,7 +203,7 @@
   @media (min-width: @tablet-width) {
     width: 248px;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     font-size: 16px;
     line-height: 20px;
   }
