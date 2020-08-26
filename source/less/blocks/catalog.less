@@ -6,15 +6,15 @@
   align-items: center;
   text-align: center;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     margin-bottom: 66px;
   }
 
   @media (min-width: @desktop-width) {
     display: block;
-    margin-left: 7.64%;
-    margin-right: 7.64%;
-    margin-bottom: 76px;
+    margin-left: 7.64vw;
+    margin-right: 6.36vw;
+    margin-bottom: 75px;
   }
 }
 
@@ -42,7 +42,9 @@
   }
 
   @media (min-width: @desktop-width) {
+    line-height: 55px;
     padding: 0;
+    margin-bottom: 168px;
   }
 }
 
@@ -58,7 +60,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 9.21%;
-    row-gap: 140px;
+    row-gap: 141px;
     text-align: center;
     justify-items: center;
     margin-left: 2.1vw;
@@ -67,8 +69,9 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
-    row-gap: 144px;
+    row-gap: 143px;
     min-width: 1220px;
+    margin: 0;
   }
 }
 
@@ -90,7 +93,7 @@
 
   @media (min-width: @desktop-width) {
     width: 245px;
-    min-height: 511px;
+    min-height: 407px;
   }
 }
 
@@ -103,6 +106,10 @@
     display: block;
     position: relative;
     margin-top: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 24px;
   }
 }
 
@@ -117,6 +124,10 @@
     position: absolute;
     bottom: 193px;
     left: -21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 200px;
   }
 }
 
@@ -157,6 +168,10 @@
     text-align: center;
     padding: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 6px;
+  }
 }
 
 .catalog__info {
@@ -191,6 +206,10 @@
     padding-bottom: 6px;
     padding-top: 5px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+  }
 }
 
 .catalog__button {
@@ -202,6 +221,7 @@
 
   @media (min-width: @tablet-width) {
     width: 248px;
+    min-height: 39px;
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 16px;
@@ -210,6 +230,8 @@
 
   @media (min-width: @desktop-width) {
     width: 168px;
+    min-height: 40px;
+    margin-bottom: 16px;
   }
 
   &:hover,

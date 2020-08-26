@@ -24,13 +24,14 @@
     align-items: center;
     margin-left: 3.91vw;
     margin-right: 1.6vw;
+    margin-bottom: 76px;
     padding: 0;
   }
 }
 @media (min-width: 1440px) {
   .additional {
     margin-left: 7.64vw;
-    margin-right: 7.64vw;
+    margin-right: 2.6vw;
     margin-bottom: 86px;
   }
 }
@@ -62,8 +63,10 @@
 @media (min-width: 1440px) {
   .additional__title {
     padding: 0;
+    width: 1220px;
     margin: 0;
-    margin-bottom: 81px;
+    margin-right: 55px;
+    margin-bottom: 80px;
   }
 }
 .additional__title::before {
@@ -77,10 +80,9 @@
 }
 @media (min-width: 768px) {
   .additional__title::before {
-    min-width: 42.71vw;
-    width: 42.71vw;
-    top: 22px;
-    left: 58.4vw;
+    min-width: 66.46vw;
+    top: 23px;
+    left: 25.85vw;
   }
 }
 @media (min-width: 768px) {
@@ -96,8 +98,9 @@
 }
 @media (min-width: 1440px) {
   .additional__title::after {
-    width: 40%;
-    left: -150px;
+    width: 4.86vw;
+    left: -7.63vw;
+    top: 23px;
   }
 }
 @media (min-width: 1440px) {
@@ -157,7 +160,8 @@
   .additional__item {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
+    column-gap: 20px;
+    height: 71px;
     padding: 0;
     align-items: baseline;
   }
@@ -176,6 +180,11 @@
   .additional__product {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .additional__product {
+    padding-top: 25px;
   }
 }
 .additional__info {
@@ -201,6 +210,7 @@
 @media (min-width: 1440px) {
   .additional__info {
     justify-content: space-between;
+    margin-left: 11px;
   }
 }
 @media (min-width: 1440px) {
@@ -210,7 +220,7 @@
 }
 @media (min-width: 768px) {
   .additional__check {
-    margin-left: 51px;
+    margin-left: 101px;
   }
 }
 .additional__button {
@@ -229,13 +239,15 @@
     height: 38px;
     grid-column-start: 1;
     grid-column-end: 3;
-    margin-top: 1px;
+    margin-top: 3px;
   }
 }
 @media (min-width: 1440px) {
   .additional__button {
     min-width: 244px;
     width: 244px;
+    min-height: 40px;
+    height: 40px;
     grid-column-start: none;
     grid-column-end: none;
   }

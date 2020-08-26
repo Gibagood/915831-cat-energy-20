@@ -34,6 +34,7 @@
   .promo {
     min-width: 245px;
     min-height: 289px;
+    margin-right: 56px;
   }
 }
 .promo__desc {
@@ -54,6 +55,7 @@
     width: 161px;
     min-height: 60px;
     padding: 0;
+    padding-top: 5px;
     margin-left: 42.19%;
   }
 }
@@ -61,7 +63,7 @@
   .promo__desc {
     margin: 0;
     text-align: center;
-    margin-top: 130px;
+    margin-top: 140px;
   }
 }
 .promo__desc::before {
@@ -79,13 +81,15 @@
 }
 @media (min-width: 768px) {
   .promo__desc::before {
-    top: -11px;
-    left: -201%;
+    top: -3px;
+    left: -424%;
+    width: 62px;
+    height: 70px;
   }
 }
 @media (min-width: 1440px) {
   .promo__desc::before {
-    top: -150px;
-    left: 40px;
+    top: -121px;
+    left: -41.5vw;
   }
 }

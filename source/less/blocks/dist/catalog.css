@@ -24,9 +24,9 @@
 @media (min-width: 1440px) {
   .catalog {
     display: block;
-    margin-left: 7.64%;
-    margin-right: 7.64%;
-    margin-bottom: 76px;
+    margin-left: 7.64vw;
+    margin-right: 6.36vw;
+    margin-bottom: 75px;
   }
 }
 .catalog__title {
@@ -59,7 +59,9 @@
 }
 @media (min-width: 1440px) {
   .catalog__title {
+    line-height: 55px;
     padding: 0;
+    margin-bottom: 168px;
   }
 }
 .catalog__list {
@@ -75,7 +77,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 9.21%;
-    row-gap: 140px;
+    row-gap: 141px;
     text-align: center;
     justify-items: center;
     margin-left: 2.1vw;
@@ -85,8 +87,9 @@
   .catalog__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
-    row-gap: 144px;
+    row-gap: 143px;
     min-width: 1220px;
+    margin: 0;
   }
 }
 .catalog__item {
@@ -113,7 +116,7 @@
 @media (min-width: 1440px) {
   .catalog__item {
     width: 245px;
-    min-height: 511px;
+    min-height: 407px;
   }
 }
 .catalog__item-wrapper {
@@ -128,6 +131,11 @@
     margin-top: 28px;
   }
 }
+@media (min-width: 1440px) {
+  .catalog__item-wrapper {
+    margin-top: 24px;
+  }
+}
 .catalog__image {
   padding-left: 20px;
   width: 140px;
@@ -140,6 +148,11 @@
     position: absolute;
     bottom: 193px;
     left: -21px;
+  }
+}
+@media (min-width: 1440px) {
+  .catalog__image {
+    bottom: 200px;
   }
 }
 .catalog__content {
@@ -182,6 +195,11 @@
     padding: 0;
   }
 }
+@media (min-width: 1440px) {
+  .catalog__item-title {
+    padding-right: 6px;
+  }
+}
 .catalog__info {
   font-family: "Arial", sans-serif;
   font-weight: normal;
@@ -217,6 +235,11 @@
     padding-top: 5px;
   }
 }
+@media (min-width: 1440px) {
+  .catalog__desc {
+    width: 169px;
+  }
+}
 .catalog__button {
   width: 280px;
   min-height: 40px;
@@ -227,6 +250,7 @@
 @media (min-width: 768px) {
   .catalog__button {
     width: 248px;
+    min-height: 39px;
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 16px;
@@ -236,6 +260,8 @@
 @media (min-width: 1440px) {
   .catalog__button {
     width: 168px;
+    min-height: 40px;
+    margin-bottom: 16px;
   }
 }
 .catalog__button:hover,

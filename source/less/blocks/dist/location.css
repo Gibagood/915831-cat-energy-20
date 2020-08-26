@@ -21,7 +21,7 @@
 }
 @media (min-width: 768px) {
   .location__cooperation {
-    margin-left: 9.3vw;
-    margin-right: 7.31vw;
+    padding-left: 9.3vw;
+    padding-right: 7.31vw;
   }
 }
