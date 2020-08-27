@@ -25,3 +25,8 @@
     padding-right: 7.31vw;
   }
 }
+@media (min-width: 1440px) {
+  .location__cooperation {
+    padding: 0;
+  }
+}

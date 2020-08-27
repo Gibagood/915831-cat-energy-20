@@ -64,6 +64,7 @@
   .site-list__item--active-index {
     border-bottom: 2px solid #ffffff;
     padding-bottom: 3px;
+    margin-left: -58px;
   }
 }
 .site-list__link {

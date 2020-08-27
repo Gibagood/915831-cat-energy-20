@@ -4,6 +4,7 @@
   .border-bottom-catalog;
   padding-left: 6.25%;
   padding-right: 6.25%;
+  padding-bottom: 12px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -20,16 +21,26 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 5px;
   }
 }
 
 .cat-data__input {
   .form-desc;
   .input-form;
-  padding-left: 15px;
+  height: 45px;
+  padding-left: 14px;
+  margin-top: 3px;
+  margin-bottom: 4px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 18px;
+    padding-left: 17px;
+    font-size: 20px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 19px;
   }
 }
 
@@ -37,23 +48,33 @@
   display: grid;
   grid-template-columns: min-content auto;
   align-items: center;
-  margin-bottom: 13px;
+  margin-bottom: 7px;
   column-gap: 14px;
 
 
   @media (min-width: @tablet-width) {
     grid-template-columns: max-content auto;
+    margin-bottom: 13px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 20px;
+    margin-bottom: 13px;
+    column-gap: 12px;
   }
 }
 
 .cat-data__item--weight .cat-data__label {
   min-width: 60px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 9px;
+  }
 }
 
 .cat-data__item--age .cat-data__label {
   min-width: 94px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 6px;
+  }
 }
