@@ -172,7 +172,7 @@
 @media (min-width: 1440px) {
   .diet__desc {
     width: 467px;
-    margin-bottom: 23px;
+    margin-bottom: 115px;
   }
 }
 @media (min-width: 768px) {
@@ -205,7 +205,10 @@
 }
 @media (min-width: 1440px) {
   .diet__link {
-    margin-top: 26px;
+    position: absolute;
+    left: 52px;
+    bottom: 58px;
+    margin-top: 0;
   }
 }
 .diet__link::before {

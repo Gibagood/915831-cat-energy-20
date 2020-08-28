@@ -43,7 +43,7 @@
   text-align: left;
   color: #000000;
   margin: 0;
-  padding-bottom: 34px;
+  padding-bottom: 35px;
 }
 @media (max-width: 767px) {
   .additional__title {
@@ -72,9 +72,9 @@
 .additional__title::before {
   position: absolute;
   content: "";
-  top: 14px;
-  left: 240px;
-  width: 16.56%;
+  top: 16px;
+  left: 77.3vw;
+  width: 11.66vw;
   height: 2px;
   background-color: #68b738;
 }

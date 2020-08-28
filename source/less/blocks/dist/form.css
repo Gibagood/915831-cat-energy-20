@@ -53,6 +53,7 @@
   .form__title {
     margin: 0;
     margin-bottom: 57px;
+    margin-top: -2px;
   }
 }
 .form__desc {

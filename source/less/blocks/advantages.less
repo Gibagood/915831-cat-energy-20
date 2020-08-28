@@ -2,8 +2,8 @@
 
 .advantages {
   min-width: 280px;
-  margin-left: 6.25%;
-  margin-right: 6.25%;
+  margin-left: 6.25vw;
+  margin-right: 6.25vw;
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
@@ -11,14 +11,15 @@
     flex-direction: column;
     align-items: center;
     min-width: 629px;
-    margin-left: -153px;
+    margin-left: 3.91vw;
     margin-bottom: 44px;
   }
 
   @media (min-width: @desktop-width) {
     display: block;
-    margin-left: 7.64%;
-    margin-right: 7.64%;
+    margin-left: 7.64vw;
+    margin-right: 7.64vw;
+    padding: 0;
   }
 }
 
@@ -36,7 +37,7 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    margin-left: -117px;
+    margin-left: -298px;
     margin-bottom: 34px;
   }
 
@@ -61,16 +62,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 34%;
+    column-gap: 49%;
     row-gap: 37px;
-    width: 82.03%;
     padding: 0;
+    justify-content: flex-end;
+    margin-left: 306px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: none;
-    column-gap: 5.25vw;
+    justify-content: flex-start;
+    column-gap: 5.2vw;
     width: 100%;
     margin: 0;
   }

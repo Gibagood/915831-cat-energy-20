@@ -32,13 +32,13 @@
   .page-footer {
     padding-left: 7.64vw;
     padding-right: 6.49vw;
-    min-height: 138px;
-    padding-top: 9px;
+    min-height: 145px;
+    padding-top: 6px;
   }
 }
 .page-footer__social {
-  padding-top: 22px;
-  padding-bottom: 18px;
+  padding-top: 21px;
+  padding-bottom: 14px;
   padding-right: 9px;
   margin-left: 6.25%;
   margin-right: 6.25%;
@@ -64,7 +64,7 @@
   text-align: center;
   margin: 0 auto;
   min-height: 55px;
-  padding-top: 40px;
+  padding-top: 41px;
 }
 @media (min-width: 768px) {
   .page-footer__logo-name {

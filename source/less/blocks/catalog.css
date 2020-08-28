@@ -133,7 +133,7 @@
 }
 @media (min-width: 1440px) {
   .catalog__item-wrapper {
-    margin-top: 24px;
+    margin-top: 32px;
   }
 }
 .catalog__image {
@@ -190,14 +190,15 @@
   .catalog__item-title {
     width: 150px;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 23px;
     text-align: center;
     padding: 0;
   }
 }
 @media (min-width: 1440px) {
   .catalog__item-title {
-    padding-right: 6px;
+    padding-right: 5px;
+    margin-top: -7px;
   }
 }
 .catalog__info {
@@ -221,6 +222,7 @@
 @media (min-width: 1440px) {
   .catalog__info {
     width: 180px;
+    padding-top: 17px;
   }
 }
 .catalog__desc {
