@@ -18,7 +18,7 @@
 }
 @media (min-width: 768px) {
   .catalog {
-    margin-bottom: 66px;
+    margin-bottom: 68px;
   }
 }
 @media (min-width: 1440px) {
@@ -76,8 +76,8 @@
   .catalog__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 9.21%;
-    row-gap: 141px;
+    column-gap: 9.25%;
+    row-gap: 140.7px;
     text-align: center;
     justify-items: center;
     margin-left: 2.1vw;
@@ -104,7 +104,7 @@
 @media (min-width: 768px) {
   .catalog__item {
     display: grid;
-    grid-template-rows: auto min-content;
+    grid-template-rows: max-content min-content;
     align-items: center;
     text-align: -webkit-center;
     width: 324px;
@@ -127,13 +127,12 @@
 @media (min-width: 768px) {
   .catalog__item-wrapper {
     display: block;
-    position: relative;
-    margin-top: 28px;
+    margin-top: 112px;
   }
 }
 @media (min-width: 1440px) {
   .catalog__item-wrapper {
-    margin-top: 32px;
+    margin-top: 105px;
   }
 }
 .catalog__image {
@@ -145,19 +144,18 @@
   .catalog__image {
     width: 100%;
     height: auto;
-    position: absolute;
-    bottom: 193px;
-    left: -21px;
+    margin-top: -196px;
+    padding: 0;
   }
 }
 @media (min-width: 1440px) {
   .catalog__image {
-    bottom: 200px;
+    margin-top: -193px;
   }
 }
 .catalog__content {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: min-content min-content;
   justify-items: left;
   min-width: 142px;
 }
@@ -166,12 +164,13 @@
     grid-template-rows: min-content min-content;
     justify-items: center;
     align-items: center;
-    margin-top: 104px;
+    margin-top: 33px;
   }
 }
 @media (min-width: 1440px) {
   .catalog__content {
     width: 173px;
+    margin-top: 45px;
   }
 }
 .catalog__item-title {
@@ -209,6 +208,8 @@
   color: #444444;
   min-width: 141px;
   margin: 0;
+  margin-top: 15px;
+  margin-bottom: 20px;
   border-spacing: 0;
 }
 @media (min-width: 768px) {
@@ -217,6 +218,7 @@
     font-size: 16px;
     line-height: 16px;
     padding-top: 15px;
+    margin: 0;
   }
 }
 @media (min-width: 1440px) {
@@ -242,6 +244,9 @@
     width: 169px;
   }
 }
+.catalog__subject {
+  overflow-wrap: anywhere;
+}
 .catalog__button {
   width: 280px;
   min-height: 40px;
@@ -253,8 +258,8 @@
   .catalog__button {
     width: 248px;
     min-height: 39px;
-    margin-top: 0;
-    margin-bottom: 15px;
+    margin-top: 31px;
+    margin-left: 3px;
     font-size: 16px;
     line-height: 20px;
   }

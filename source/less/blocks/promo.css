@@ -11,6 +11,7 @@
   color: rgba(0, 0, 0, 0.3);
 }
 .promo {
+  position: relative;
   min-width: 280px;
   min-height: 289px;
   text-align: center;
@@ -38,7 +39,6 @@
   }
 }
 .promo__desc {
-  position: relative;
   display: block;
   font-family: "Arial", sans-serif;
   font-weight: normal;
@@ -81,8 +81,8 @@
 }
 @media (min-width: 768px) {
   .promo__desc::before {
-    top: -3px;
-    left: -424%;
+    top: 31%;
+    left: -33.5vw;
     width: 62px;
     height: 70px;
   }

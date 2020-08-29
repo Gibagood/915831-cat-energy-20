@@ -14,7 +14,7 @@
   margin-left: 6.25vw;
   margin-right: 6.25vw;
   margin-bottom: 35px;
-  padding-top: 27px;
+  padding-top: 26px;
 }
 @media (min-width: 768px) {
   .additional {
@@ -56,7 +56,7 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0;
-    padding-left: 9.8vw;
+    padding-left: 9.6vw;
     margin-bottom: 80px;
   }
 }
@@ -80,9 +80,9 @@
 }
 @media (min-width: 768px) {
   .additional__title::before {
-    min-width: 66.46vw;
-    top: 23px;
-    left: 25.85vw;
+    min-width: 42.71vw;
+    top: 22px;
+    left: 58.3vw;
   }
 }
 @media (min-width: 768px) {
@@ -123,7 +123,7 @@
     min-width: 708px;
     border: 1px solid #cdcdcd;
     border-bottom: none;
-    margin-bottom: 68px;
+    margin-bottom: 69px;
   }
 }
 @media (min-width: 1440px) {
@@ -149,11 +149,11 @@
   .additional__item {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 91px;
+    grid-template-rows: min-content min-content;
+    min-height: 91.1px;
     margin: 0;
     border-bottom: 1px solid #cdcdcd;
-    padding: 25px 37px 22px 37px;
+    padding: 24px 37px 22.7px 37.5px;
   }
 }
 @media (min-width: 1440px) {
@@ -161,7 +161,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
-    height: 71px;
+    min-height: 71px;
     padding: 0;
     align-items: baseline;
   }
@@ -175,11 +175,13 @@
   color: #222222;
   margin: 0;
   margin-bottom: 13px;
+  overflow-wrap: anywhere;
 }
 @media (min-width: 768px) {
   .additional__product {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 25px;
+    margin-bottom: 15px;
   }
 }
 @media (min-width: 1440px) {
@@ -204,7 +206,7 @@
     align-items: flex-end;
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
   }
 }
 @media (min-width: 1440px) {
@@ -220,7 +222,7 @@
 }
 @media (min-width: 768px) {
   .additional__check {
-    margin-left: 101px;
+    margin-left: 51px;
   }
 }
 .additional__button {
@@ -239,7 +241,7 @@
     height: 38px;
     grid-column-start: 1;
     grid-column-end: 3;
-    margin-top: 3px;
+    margin-top: 8px;
   }
 }
 @media (min-width: 1440px) {
@@ -250,6 +252,7 @@
     height: 40px;
     grid-column-start: none;
     grid-column-end: none;
+    padding-top: 7px;
   }
 }
 .additional__button:hover,
