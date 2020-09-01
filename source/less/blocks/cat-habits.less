@@ -1,31 +1,45 @@
 @import "../variables.less";
 
 .cat-habits {
+  margin: 0;
+  margin-top: 15px;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+
   @media (min-width: @tablet-width) {
     padding: 0;
+    margin-top: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 67px;
   }
 }
 
 .cat-habits__title {
   position: relative;
+  margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 76px;
+  }
 
   &::before {
     position: absolute;
     content: "";
-    top: 42px;
-    left: 46vw;
-    width: 45vw;
+    top: 15px;
+    left: 44.5vw;
     height: 2px;
     background-color: @basic_green;
 
     @media (min-width: @tablet-width) {
-      top: 23px;
-      left: 27vw;
+      top: 22px;
+      left: 28.5vw;
       width: 62vw;
     }
 
     @media (min-width: @desktop-width) {
-      left: 14vw;
+      left: 15.4vw;
       width: 77vw;
     }
   }
@@ -34,11 +48,15 @@
     @media (min-width: @tablet-width) {
       position: absolute;
       content: "";
-      top: 23px;
-      left: -9vw;
+      top: 22px;
+      left: -13.2vw;
       width: 8vw;
       height: 2px;
       background-color: @basic_green;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: -10.8vw;
     }
   }
 }
@@ -46,20 +64,21 @@
 .cat-habits__textarea {
   .form-desc;
   width: 85.5vw;
-  min-height: 150px;
+  height: 133px;
   text-align: center;
   padding-top: 13px;
 
   @media (min-width: @tablet-width) {
-    min-width: 631px;
-    height: 174px;
+    width: 609px;
+    height: 161px;
     font-size: 20px;
     line-height: 30px;
     text-align: left;
-    padding-left: 19px;
+    padding-left: 18px;
+    padding-top: 9px;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 1220px;
+    min-width: 1198px;
   }
 }

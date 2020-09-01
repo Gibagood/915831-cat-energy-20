@@ -2,19 +2,24 @@
 
 .advantages {
   min-width: 280px;
+  margin-left: 6.25vw;
+  margin-right: 6.25vw;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-width: 629px;
-    margin-left: -200px;
+    margin-left: 3.91vw;
+    margin-bottom: 44px;
   }
 
   @media (min-width: @desktop-width) {
     display: block;
-    margin-left: 7.64%;
-    margin-right: 7.64%;
+    margin-left: 7.64vw;
+    margin-right: 7.64vw;
+    padding: 0;
   }
 }
 
@@ -24,16 +29,20 @@
   line-height: 40px;
   text-align: center;
   color: @basic_black;
+  margin: 0;
+  margin-bottom: 40px;
+  margin-left: -55px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    margin-left: -93px;
+    margin-left: -298px;
+    margin-bottom: 34px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 0;
+    margin-left: 1px;
   }
 }
 
@@ -45,33 +54,38 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 280px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 37%;
+    column-gap: 49%;
     row-gap: 37px;
-    width: 82.03%;
     padding: 0;
+    justify-content: flex-end;
+    margin-left: 306px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: none;
-    column-gap: 7.86%;
-    width: 84.72%;
+    justify-content: flex-start;
+    column-gap: 5.2vw;
+    width: 100%;
+    margin: 0;
   }
 }
 
 .advantages__item {
   position: relative;
-  margin-bottom: 20px;
-  margin-left: 31.25%;
-  margin-right: 6.56%;
+  margin-left: 80px;
+  margin-bottom: 26px;
 
   @media (min-width: @tablet-width) {
-    width: 230px;
+    width: 246px;
     min-height: 130px;
     margin: 0;
     font-size: 16px;
@@ -86,7 +100,7 @@
 
   &--nutrients::before {
     position: absolute;
-    top: 0;
+    top: -2px;
     left: -80px;
     content: "";
     width: 60px;
@@ -99,7 +113,7 @@
     @media (min-width: @tablet-width) {
       width: 80px;
       height: 80px;
-      top: 20px;
+      top: 38px;
       left: 0;
     }
   }
@@ -110,8 +124,8 @@
     @media (min-width: @tablet-width) {
       display: block;
       position: absolute;
-      top: -16px;
-      left: 119px;
+      top: 0;
+      left: 118px;
       content: "1";
       width: 112px;
       height: 280px;
@@ -128,7 +142,7 @@
 
   &--flour::before {
     position: absolute;
-    top: 0;
+    top: -2px;
     left: -80px;
     content: "";
     width: 60px;
@@ -141,7 +155,7 @@
     @media (min-width: @tablet-width) {
       width: 80px;
       height: 80px;
-      top: 20px;
+      top: 38px;
       left: 0;
     }
   }
@@ -152,8 +166,8 @@
     @media (min-width: @tablet-width) {
       display: block;
       position: absolute;
-      top: -16px;
-      left: 119px;
+      top: 0;
+      left: 113px;
       content: "2";
       width: 134px;
       height: 280px;
@@ -169,7 +183,7 @@
 
   &--eating::before {
     position: absolute;
-    top: 0;
+    top: -2px;
     left: -80px;
     content: "";
     width: 60px;
@@ -182,7 +196,7 @@
     @media (min-width: @tablet-width) {
       width: 80px;
       height: 80px;
-      top: 20px;
+      top: 38px;
       left: 0;
     }
   }
@@ -193,8 +207,8 @@
     @media (min-width: @tablet-width) {
       display: block;
       position: absolute;
-      top: -16px;
-      left: 119px;
+      top: 0;
+      left: 113px;
       content: "3";
       width: 134px;
       height: 280px;
@@ -210,7 +224,7 @@
 
   &--better::before {
     position: absolute;
-    top: 0;
+    top: -2px;
     left: -80px;
     content: "";
     width: 60px;
@@ -223,7 +237,7 @@
     @media (min-width: @tablet-width) {
       width: 80px;
       height: 80px;
-      top: 20px;
+      top: 38px;
       left: 0;
     }
   }
@@ -234,8 +248,8 @@
     @media (min-width: @tablet-width) {
       display: block;
       position: absolute;
-      top: -16px;
-      left: 119px;
+      top: 0;
+      left: 114px;
       content: "4";
       width: 136px;
       height: 280px;
