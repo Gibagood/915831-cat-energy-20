@@ -1,48 +1,59 @@
-@import "../variables.less";
-
+.button-hover-focus {
+  background-color: #5eAA2f;
+}
+.button-active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.main-menu-hover-focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+.main-menu-active {
+  color: rgba(0, 0, 0, 0.3);
+}
 .more {
   width: 321px;
   min-height: 158px;
   margin: 0 auto;
   text-align: center;
   padding-top: 26px;
-
-  @media (min-width: @tablet-width) {
+}
+@media (min-width: 768px) {
+  .more {
     width: 320px;
     display: block;
-    background-color: @basic_white;
-    border: 2px solid @basic_gray;
+    background-color: #ffffff;
+    border: 2px solid #f2f2f2;
     padding-bottom: 19px;
     padding-top: 0;
   }
-
-  @media (min-width: @desktop-width) {
+}
+@media (min-width: 1440px) {
+  .more {
     width: 242px;
     margin: 0;
     padding-bottom: 20px;
   }
 }
-
-.more__img {
-  @media (min-width: @tablet-width) {
+@media (min-width: 768px) {
+  .more__img {
     width: 60px;
     height: 60px;
     margin-top: 51px;
   }
 }
-
 .more__title {
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: @basic-black-2;
+  color: #111111;
   margin: 0;
   margin-top: 21px;
   margin-bottom: 8px;
-
-  @media (min-width: @tablet-width) {
+}
+@media (min-width: 768px) {
+  .more__title {
     width: 134px;
     font-size: 20px;
     line-height: 22px;
@@ -50,7 +61,6 @@
     margin-top: 46px;
   }
 }
-
 .more__desc {
   display: block;
   font-family: "Arial", sans-serif;
@@ -59,10 +69,11 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  color: @special_dark-grey-1;
+  color: #444444;
   margin-bottom: 21px;
-
-  @media (min-width: @tablet-width) {
+}
+@media (min-width: 768px) {
+  .more__desc {
     width: 167px;
     font-size: 16px;
     line-height: 18px;
@@ -70,16 +81,16 @@
     margin-top: 23px;
   }
 }
-
 .more__button {
   width: 279px;
   min-height: 40px;
-  background-color: @basic_gray;
-  color: @special_dark-grey-1;
+  background-color: #f2f2f2;
+  color: #444444;
   cursor: pointer;
   font-size: 16px;
-
-  @media (min-width: @tablet-width) {
+}
+@media (min-width: 768px) {
+  .more__button {
     width: 249px;
     height: 40px;
     margin: 0 auto;
@@ -87,18 +98,17 @@
     margin-top: 87px;
     line-height: 30px;
   }
-
-  @media (min-width: @desktop-width) {
+}
+@media (min-width: 1440px) {
+  .more__button {
     width: 169px;
   }
-
-  &:hover,
-  &:focus {
-    background-color: @special_grey-2;
-  }
-
-  &:active {
-    .main-menu-active;
-    background-color: @special_grey-2;
-  }
+}
+.more__button:hover,
+.more__button:focus {
+  background-color: #EBEBEB;
+}
+.more__button:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #EBEBEB;
 }

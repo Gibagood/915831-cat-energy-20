@@ -1,11 +1,22 @@
-@import "../variables.less";
-
+.button-hover-focus {
+  background-color: #5eAA2f;
+}
+.button-active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.main-menu-hover-focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+.main-menu-active {
+  color: rgba(0, 0, 0, 0.3);
+}
 .additional {
   margin-left: 6.25vw;
   margin-bottom: 35px;
   padding-top: 26px;
-
-  @media (min-width: @tablet-width) {
+}
+@media (min-width: 768px) {
+  .additional {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,48 +25,51 @@
     margin-left: 0;
     padding: 0;
   }
-
-  @media (min-width: @desktop-width) {
+}
+@media (min-width: 1440px) {
+  .additional {
     margin-bottom: 86px;
   }
 }
-
 .additional__fieldset-title {
   border: none;
-  border-top: 2px solid @basic_green;
+  border-top: 2px solid #68b738;
   padding: 0;
   margin: 0;
-
-  @media (min-width: @tablet-width) {
+}
+@media (min-width: 768px) {
+  .additional__fieldset-title {
     padding-left: 30px;
   }
-
-  @media (min-width: @desktop-width) {
+}
+@media (min-width: 1440px) {
+  .additional__fieldset-title {
     padding-left: 70px;
   }
 }
-
 .additional__title {
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   text-align: left;
-  color: @basic_black;
+  color: #000000;
   margin: 0;
   margin-bottom: 23px;
   padding: 0;
   padding-right: 21px;
   padding-bottom: 10px;
-
-  @media (min-width: @tablet-width) {
+}
+@media (min-width: 768px) {
+  .additional__title {
     font-size: 36px;
     line-height: 36px;
     padding-left: 37px;
     padding-right: 36px;
     margin-bottom: 69px;
   }
-
-  @media (min-width: @desktop-width) {
+}
+@media (min-width: 1440px) {
+  .additional__title {
     padding: 0;
     padding-left: 40px;
     padding-right: 35px;
@@ -64,28 +78,28 @@
     margin-bottom: 69px;
   }
 }
-
 .additional__wrapper-list {
   margin-right: 6.25vw;
-  border-top: 1px solid @special_grey-2;
+  border-top: 1px solid #EBEBEB;
   margin-top: 2px;
-
-  @media (min-width: @tablet-width) {
+}
+@media (min-width: 768px) {
+  .additional__wrapper-list {
     margin-left: 3.91vw;
     margin-right: 1.6vw;
     margin-top: 0;
   }
-
-  @media (min-width: @desktop-width) {
+}
+@media (min-width: 1440px) {
+  .additional__wrapper-list {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    column-gap: 79px;
+    column-gap: 80px;
     margin-left: 7.64vw;
     margin-right: 2.6vw;
     border: none;
   }
 }
-
 .additional__list {
   display: flex;
   flex-direction: column;
@@ -93,40 +107,47 @@
   margin: 0;
   margin-bottom: 39px;
   padding: 0;
-
-  @media (min-width: @tablet-width) {
+}
+@media (min-width: 768px) {
+  .additional__list {
     min-width: 705px;
-    border: 1px solid @special_grey-1;
+    border: 1px solid #cdcdcd;
     border-bottom: none;
     margin-bottom: 69px;
   }
-
-  @media (min-width: @desktop-width) {
+}
+@media (min-width: 1440px) {
+  .additional__list {
     min-width: 896px;
     border-left: none;
     border-right: none;
     margin: 0;
   }
 }
-
 .additional__item {
-  .border-bottom-catalog;
   position: relative;
   text-align: center;
   padding-bottom: 17px;
   padding-top: 13px;
-
-  @media (min-width: @tablet-width) {
+}
+@media (max-width: 767px) {
+  .additional__item {
+    border-bottom: 1px solid #EBEBEB;
+  }
+}
+@media (min-width: 768px) {
+  .additional__item {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content min-content;
     min-height: 91.1px;
     margin: 0;
-    border-bottom: 1px solid @special_grey-1;
+    border-bottom: 1px solid #cdcdcd;
     padding: 24px 37px 22.7px 37.5px;
   }
-
-  @media (min-width: @desktop-width) {
+}
+@media (min-width: 1440px) {
+  .additional__item {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
@@ -135,29 +156,29 @@
     align-items: baseline;
   }
 }
-
 .additional__product {
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   text-align: left;
   text-transform: uppercase;
-  color: @special_dark-grey-2;
+  color: #222222;
   margin: 0;
   margin-bottom: 13px;
   overflow-wrap: anywhere;
-
-  @media (min-width: @tablet-width) {
+}
+@media (min-width: 768px) {
+  .additional__product {
     font-size: 20px;
     line-height: 25px;
     margin-bottom: 15px;
   }
-
-  @media (min-width: @desktop-width) {
+}
+@media (min-width: 1440px) {
+  .additional__product {
     padding-top: 23px;
   }
 }
-
 .additional__info {
   display: flex;
   justify-content: space-between;
@@ -166,42 +187,42 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
-  color: @special_dark-grey-1;
+  color: #444444;
   margin-bottom: 15px;
-
-  @media (min-width: @tablet-width) {
+}
+@media (min-width: 768px) {
+  .additional__info {
     justify-content: flex-end;
     align-items: flex-end;
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 13px;
   }
-
-  @media (min-width: @desktop-width) {
+}
+@media (min-width: 1440px) {
+  .additional__info {
     justify-content: space-between;
     margin-left: 11px;
   }
 }
-
-.additional__text {
-  @media (min-width: @desktop-width) {
+@media (min-width: 1440px) {
+  .additional__text {
     text-align: left;
   }
 }
-
-.additional__check {
-  @media (min-width: @tablet-width) {
+@media (min-width: 768px) {
+  .additional__check {
     margin-left: 51px;
   }
 }
-
 .additional__button {
   width: 280px;
   min-height: 40px;
   cursor: pointer;
   font-size: 16px;
-
-  @media (min-width: @tablet-width) {
+}
+@media (min-width: 768px) {
+  .additional__button {
     display: flex;
     min-width: 632px;
     align-items: center;
@@ -212,8 +233,9 @@
     grid-column-end: 3;
     margin-top: 8px;
   }
-
-  @media (min-width: @desktop-width) {
+}
+@media (min-width: 1440px) {
+  .additional__button {
     min-width: 244px;
     width: 244px;
     min-height: 40px;
@@ -222,14 +244,11 @@
     grid-column-end: none;
     padding-top: 7px;
   }
-
-
-  &:hover,
-  &:focus {
-    .button-hover-focus;
-  }
-
-  &:active {
-    .button-active;
-  }
+}
+.additional__button:hover,
+.additional__button:focus {
+  background-color: #5eAA2f;
+}
+.additional__button:active {
+  color: rgba(255, 255, 255, 0.3);
 }

@@ -2,66 +2,50 @@
 
 .cat-owner {
   min-width: 280px;
-  padding-left: 6.25%;
-  padding-right: 6.25%;
   margin: 0;
+  margin-left: 6.25vw;
+  border: none;
+  border-top: 2px solid @basic_green;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
+    padding-left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 70px;
   }
 }
 
 .cat-owner__title {
-  position: relative;
-  margin-bottom: 33px;
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  padding-right: 14px;
+  padding-top: 18px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 76px;
+    padding-left: 37px;
+    padding-right: 36px;
   }
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 17px;
-    left: 62.9vw;
-    width: 28vw;
-    height: 2px;
-    background-color: @basic_green;
-
-    @media (min-width: @tablet-width) {
-      top: 22px;
-      left: 72vw;
-      width: 20vw;
-    }
-
-    @media (min-width: @desktop-width) {
-      left: 38.3vw;
-      width: 53vw;
-    }
-  }
-
-  &::after {
-    @media (min-width: @tablet-width) {
-      position: absolute;
-      content: "";
-      top: 22px;
-      left: -13.2vw;
-      width: 8vw;
-      height: 2px;
-      background-color: @basic_green;
-    }
-
-    @media (min-width: @desktop-width) {
-      left: -10.8vw;
-    }
+  @media (min-width: @desktop-width) {
+    padding-left: 40px;
+    padding-right: 35px;
+    padding-bottom: 11px;
+    margin-bottom: 69px;
   }
 }
 
 .cat-owner__mail-phone {
+  padding-right: 6.25%;
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5.36vw;
+    margin-left: 9.11vw;
+    margin-right: 6.5vw;
   }
 }
 
