@@ -19,6 +19,7 @@
 }
 @media (min-width: 768px) {
   .cat-owner {
+    margin: 0;
     padding-left: 30px;
   }
 }
@@ -36,28 +37,33 @@
 }
 @media (min-width: 768px) {
   .cat-owner__title {
-    margin-bottom: 76px;
-    padding-left: 37px;
-    padding-right: 36px;
+    margin-bottom: 48px;
+    padding-bottom: 28px;
+    padding-left: 39px;
+    padding-right: 42px;
   }
 }
 @media (min-width: 1440px) {
   .cat-owner__title {
     padding-left: 40px;
-    padding-right: 35px;
-    padding-bottom: 11px;
-    margin-bottom: 69px;
+    padding-right: 40px;
+    padding-bottom: 27px;
+    margin-bottom: 49px;
   }
 }
 .cat-owner__mail-phone {
-  padding-right: 6.25%;
+  padding-right: 6.25vw;
+}
+@media (min-width: 768px) {
+  .cat-owner__mail-phone {
+    padding-left: 40px;
+  }
 }
 @media (min-width: 1440px) {
   .cat-owner__mail-phone {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5.36vw;
-    margin-left: 9.11vw;
     margin-right: 6.5vw;
   }
 }
