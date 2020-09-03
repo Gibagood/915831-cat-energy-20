@@ -14,18 +14,21 @@
   min-width: 280px;
   margin: 0;
   margin-left: 6.25vw;
+  margin-bottom: 23px;
   border: none;
   border-top: 2px solid #68b738;
 }
 @media (min-width: 768px) {
   .cat-owner {
     margin: 0;
+    margin-bottom: 52px;
     padding-left: 30px;
   }
 }
 @media (min-width: 1440px) {
   .cat-owner {
     padding-left: 70px;
+    margin-bottom: 74px;
   }
 }
 .cat-owner__title {
@@ -195,5 +198,18 @@
   }
 }
 .cat-owner__item--phone .cat-owner__input {
-  padding-left: 17px;
+  padding-left: 14px;
+  padding-top: 3px;
+}
+@media (min-width: 768px) {
+  .cat-owner__item--phone .cat-owner__input {
+    padding-left: 20px;
+    padding-top: 2px;
+  }
+}
+@media (min-width: 1440px) {
+  .cat-owner__item--phone .cat-owner__input {
+    padding-left: 18px;
+    padding-top: 1px;
+  }
 }

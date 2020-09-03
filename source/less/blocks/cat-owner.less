@@ -4,16 +4,19 @@
   min-width: 280px;
   margin: 0;
   margin-left: 6.25vw;
+  margin-bottom: 23px;
   border: none;
   border-top: 2px solid @basic_green;
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    margin-bottom: 52px;
     padding-left: 30px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 70px;
+    margin-bottom: 74px;
   }
 }
 
@@ -42,7 +45,7 @@
 .cat-owner__mail-phone {
   padding-right: 6.25vw;
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     padding-left: 40px;
   }
 
@@ -165,5 +168,16 @@
 }
 
 .cat-owner__item--phone .cat-owner__input {
-  padding-left: 17px;
+  padding-left: 14px;
+  padding-top: 3px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+    padding-top: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 18px;
+    padding-top: 1px;
+  }
 }

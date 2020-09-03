@@ -148,6 +148,7 @@
     align-items: center;
     justify-items: flex-start;
     margin: 0;
+    margin-left: 9.25vw;
   }
 }
 @media (min-width: 1440px) {
@@ -155,8 +156,8 @@
     min-width: 568px;
     min-height: 52px;
     column-gap: 1.57vw;
-    margin-left: 7.64vw;
-    margin-right: 6.45vw;
+    margin-left: 7.7vw;
+    margin-right: 2.9vw;
   }
 }
 .form__button {
@@ -202,7 +203,7 @@
   .form__required-fields {
     font-size: 16px;
     line-height: 16px;
-    margin-left: 29px;
+    margin-left: 3px;
     margin-bottom: 3px;
   }
 }
