@@ -293,6 +293,9 @@
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/before-tablet@1x.png");
+    background-color: transparent;
+    top: 7px;
+    left: 0px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/before-tablet@2x.png");
@@ -302,7 +305,7 @@
   @media (min-width: @desktop-width) {
     background-image: url("../img/before-desktop@1x.png");
 
-    @media (min-resolution: 2dppx){
+    @media (min-resolution: 2dppx) {
       background-image: url("../img/before-desktop@2x.png");
     }
   }
@@ -324,7 +327,10 @@
 
   @media (min-width: @tablet-width) {
     top: 6px;
+    left: 50%;
+    width: 50%;
     background-image: url("../img/after-tablet@1x.png");
+    background-position-x: 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/after-tablet@2x.png");
@@ -334,7 +340,7 @@
   @media (min-width: @desktop-width) {
     background-image: url("../img/after-desktop@1x.png");
 
-    @media (min-resolution: 2dppx){
+    @media (min-resolution: 2dppx) {
       background-image: url("../img/after-desktop@2x.png");
     }
   }
@@ -411,8 +417,8 @@
   text-align: center;
   text-transform: uppercase;
   color: @basic_black;
-  margin-left: 25px;
-  margin-right: 20px;
+  margin-left: 17px;
+  margin-right: 12px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -426,13 +432,23 @@
 
 .example__scale-input {
   -webkit-appearance: none;
+  display: block;
   width: 70px;
   height: 6px;
-  background: -webkit-linear-gradient(left, @basic_green 0%, @basic_green 25%, #ffffff 25%, #ffffff 100%);
+  background: -webkit-linear-gradient(left, #68b738 0%, #68b738 50%, #ffffff 50%, #ffffff 100%);
   border: none;
   box-sizing: border-box;
   border-radius: 6px;
+  margin: 3px 5px;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 457px;
+    height: 6px;
+    background-color: @special_grey-1;
+    border: none;
+    border-radius: 6px;
+  }  
 }
 
 .example__scale-input::-webkit-slider-thumb {
@@ -443,7 +459,20 @@
   border: none;
 }
 
+.example__range {
+  margin-top: 2px;
+  margin-left: 6px;
+  background: @basic_white;
+  border: 1px solid @special_grey-1;
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 14px;
+  width: 84px;
 
+  @media (min-width: @tablet-width) {
+    width: 457px;
+  }  
+}
 /*
 .example__range {
   position: relative;
