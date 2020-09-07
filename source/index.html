@@ -122,11 +122,12 @@
           </picture> -->
         </div>
         <div class="example__interactive">
-          <span class="example__text-img">было</span>
+          <span class="example__text-img example__text-img--before">было</span>
           <div class="example__range">
-            <div class="example__scale"></div>
+            <label for="scale" class="example__scale"></label>
+            <input class="example__scale-input" id="scale" type="range" min="0" max="84"  value="42" oninput="range()">
           </div>
-          <span class="example__text-img">стало</span>
+          <span class="example__text-img example__text-img--after">стало</span>
         </div>
       </div>
     </section>
@@ -177,5 +178,7 @@
     </div>
   </footer>
   <script src="./js/open-menu.js"></script>
+  <script src="./js/function-range.js"></script>
+  <script src="./js/slider.js"></script>
 </body>
 </html>
