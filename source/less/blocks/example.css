@@ -282,25 +282,54 @@
 }
 @media (min-width: 768px) {
   .example__img-wrapper {
-    margin-left: 30px;
+    min-width: 672px;
+    min-height: 510px;
+    margin-left: 22px;
   }
 }
 @media (min-width: 1440px) {
   .example__img-wrapper {
+    min-width: 690px;
+    min-height: 656px;
     margin-bottom: 53px;
     margin-left: 0;
   }
 }
 .example__before-img {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 7px;
+  left: -3px;
   width: 50%;
   height: 100%;
   background-color: #eaeaea;
   background-image: url("../img/before-mobile@1x.png");
   background-size: cover;
   z-index: 20;
+}
+@media (min-resolution: 2dppx) {
+  .example__before-img {
+    background-image: url("../img/before-mobile@2x.png");
+  }
+}
+@media (min-width: 768px) {
+  .example__before-img {
+    background-image: url("../img/before-tablet@1x.png");
+  }
+}
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .example__before-img {
+    background-image: url("../img/before-tablet@2x.png");
+  }
+}
+@media (min-width: 1440px) {
+  .example__before-img {
+    background-image: url("../img/before-desktop@1x.png");
+  }
+}
+@media (min-width: 1440px) and (min-resolution: 2dppx) {
+  .example__before-img {
+    background-image: url("../img/before-desktop@2x.png");
+  }
 }
 .example__after-img {
   position: absolute;
@@ -311,6 +340,32 @@
   background-image: url("../img/after-mobile@1x.png");
   background-size: cover;
   z-index: 10;
+}
+@media (min-resolution: 2dppx) {
+  .example__after-img {
+    background-image: url("../../img/after-mobile@2x.png");
+  }
+}
+@media (min-width: 768px) {
+  .example__after-img {
+    top: 6px;
+    background-image: url("../img/after-tablet@1x.png");
+  }
+}
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .example__after-img {
+    background-image: url("../img/after-tablet@2x.png");
+  }
+}
+@media (min-width: 1440px) {
+  .example__after-img {
+    background-image: url("../img/after-desktop@1x.png");
+  }
+}
+@media (min-width: 1440px) and (min-resolution: 2dppx) {
+  .example__after-img {
+    background-image: url("../img/after-desktop@2x.png");
+  }
 }
 /*
 .example__before-img {
@@ -384,8 +439,8 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin-left: 18px;
-  margin-right: 13px;
+  margin-left: 25px;
+  margin-right: 20px;
 }
 @media (min-width: 768px) {
   .example__text-img {
