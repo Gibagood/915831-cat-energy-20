@@ -265,7 +265,8 @@
   @media (min-width: @tablet-width) {
     min-width: 672px;
     min-height: 510px;
-    margin-left: 22px;
+    margin-left: 16px;
+    margin-bottom: 37px;
   }
 
   @media (min-width: @desktop-width) {
@@ -423,9 +424,9 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: -10px;
-    margin-left: 12px;
-    margin-right: -3px;
+    margin-bottom: -13px;
+    margin-left: 15px;
+    margin-right: 0px;
     border-bottom: dotted 1px @dotted_color;
   }
 }
@@ -445,9 +446,10 @@
   @media (min-width: @tablet-width) {
     width: 457px;
     height: 6px;
-    background-color: @special_grey-1;
+    background: @special_grey-1;
     border: none;
     border-radius: 6px;
+    margin: 0;
   }  
 }
 
@@ -457,6 +459,14 @@
   width: 0;
   height: 0;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 20px;
+    height: 20px;
+    background-color: @basic_green;
+    border: none;
+    border-radius: 50px;
+  }  
 }
 
 .example__range {
@@ -471,6 +481,9 @@
 
   @media (min-width: @tablet-width) {
     width: 457px;
+    border: none;
+    height: 5px;
+    margin: 0;
   }  
 }
 /*
