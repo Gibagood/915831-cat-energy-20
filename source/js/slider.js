@@ -1,6 +1,7 @@
 var beforeImg = document.querySelector('.example__before-img');
+var afterImg = document.querySelector('.example__after-img');
 var scale = document.querySelector('.example__scale-input');
-var scale-value = document.querySelector('.example__scale-value');
+var scaleValue = document.querySelector('.example__scale-value');
 /* 
 if (beforeImg && scale) {
     beforeImg.style.width = '75%';
@@ -8,6 +9,9 @@ if (beforeImg && scale) {
 }
  */
 scale.oninput = function () {
-    scale-value.textContent = scale.value;
+    scaleValue.textContent = scale.value;
+    scale.style.width = scale.value + '%';
     beforeImg.style.width = scale.value + '%';
+    afterImg.style.width = scale.value  + '%';
+    afterImg.style.left = (scale.value - 20) + '%';
 };
