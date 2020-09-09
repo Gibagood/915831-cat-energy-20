@@ -136,6 +136,7 @@
     width: 709px;
     height: 609px;
     background-image: url("../img/index-can-tablet@1x.jpg");
+    background-size: 709px, 609px;
     background-repeat: no-repeat;
   }
 }
@@ -147,16 +148,18 @@
 }
 @media (min-width: 1440px) {
   .choose-program__img-button-wrapper::before {
-    background-image: url("../img/index-can-desktop@1x.png");
     width: 552px;
     height: 499px;
     top: -267px;
     left: 25.2vw;
+    background-image: url("../img/index-can-desktop@1x.png");
+    background-size: 552px, 499px;
   }
 }
-@media (min-width: 1440px) and (min-resolution: 2dppx) {
+@media (min-width: 1440px) and only screen and (min-resolution: 192dpi), (min-width: 1440px) and only screen and (min-resolution: 2dppx) {
   .choose-program__img-button-wrapper::before {
     background-image: url("../img/index-can-desktop@2x.png");
+    background-size: 552px 499px;
   }
 }
 .choose-program__button {

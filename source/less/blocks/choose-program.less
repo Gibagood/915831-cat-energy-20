@@ -114,19 +114,17 @@
       width: 709px;
       height: 609px;
       .retina-image("../img/index-can-tablet@1x.jpg", "../img/index-can-tablet@2x.jpg", 709px, 609px);
+      background-size: 709px, 609px;
       background-repeat: no-repeat;
     }
 
     @media (min-width: @desktop-width) {
-      background-image: url("../img/index-can-desktop@1x.png");
       width: 552px;
       height: 499px;
       top: -267px;
       left: 25.2vw;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/index-can-desktop@2x.png");
-      }
+      .retina-image("../img/index-can-desktop@1x.png", "../img/index-can-desktop@2x.png", 552px, 499px);
+      background-size: 552px, 499px;
     }
   }
 }
