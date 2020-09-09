@@ -1,63 +1,44 @@
 @import "../variables.less";
 
 .cat-add {
-  padding-left: 6.25%;
-  padding-right: 6.25%;
-  margin-top: 27px;
+  margin: 0;
+  margin-left: 6.25vw;
   margin-bottom: 17px;
+  border: none;
+  border-top: 2px solid @basic_green;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-bottom: 35px;
     padding: 0;
-    margin-top: 66px;
-    margin-bottom: 34px;
+    padding-left: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 67px;
     margin-bottom: 42px;
+    padding-left: 70px;
   }
 }
 
 .cat-add__title {
-  position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
+  padding: 0;
+  padding-right: 23px;
+  line-height: 10px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 62px;
+    margin-bottom: 64px;
+    padding-bottom: 0;
+    padding-left: 39px;
+    padding-right: 42px;
+    line-height: 12px;
   }
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 15px;
-    left: 51.1vw;
-    width: 40vw;
-    height: 2px;
-    background-color: @basic_green;
-
-    @media (min-width: @tablet-width) {
-      top: 21px;
-      left: 32.8vw;
-      width: 59vw;
-    }
-
-    @media (min-width: @desktop-width) {
-      left: 17.5vw;
-      width: 75vw;
-      top: 23px;
-    }
-  }
-
-  &::after {
-    @media (min-width: @tablet-width) {
-      position: absolute;
-      content: "";
-      top: 22px;
-      left: -10.8vw;
-      width: 8vw;
-      height: 2px;
-      background-color: @basic_green;
-    }
+  @media (min-width: @desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 1px;
+    margin-bottom: 63px;
   }
 }
 
@@ -73,13 +54,16 @@
     min-width: 565px;
     min-height: min-content;
     row-gap: 18px;
-    column-gap: 57px;
+    column-gap: 7px;
+    margin-left: 5.25vw;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    column-gap: 80px;
+    column-gap: 0;
+    margin-left: 2.8vw;
+    margin-right: 0.9vw;
   }
 }
 
