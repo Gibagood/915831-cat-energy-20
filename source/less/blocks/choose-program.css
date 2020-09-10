@@ -15,6 +15,7 @@
   min-height: 305px;
   background-color: #68b738;
   background-image: url("../img/index-background-mobile@1x.jpg");
+  background-size: 320px 305px;
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
@@ -23,7 +24,7 @@
   margin-bottom: 197px;
   padding: 0;
 }
-@media (min-resolution: 2dppx) {
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .choose-program {
     background-image: url("../img/index-background-mobile@2x.jpg");
   }

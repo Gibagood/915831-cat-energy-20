@@ -4,7 +4,7 @@
   position: relative;
   min-height: 305px;
   background-color: @basic_green;
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  .retina-image("../img/index-background-mobile@1x.jpg", "../img/index-background-mobile@2x.jpg", 320px, 305px);
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
@@ -12,10 +12,6 @@
   margin: 0;
   margin-bottom: 197px;
   padding: 0;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/index-background-mobile@2x.jpg");
-  }
 
   @media (min-width: @tablet-width) {
     background-color: @basic_white;

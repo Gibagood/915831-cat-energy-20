@@ -1,12 +1,14 @@
-var beforeImg = document.querySelector('.example__before-img');
-var afterImg = document.querySelector('.example__after-img');
-var scale = document.querySelector('.example__scale-input');
-var scaleValue = document.querySelector('.example__scale-value');
+const range = document.querySelector(".example__input-range");
+const before = document.querySelector(".example__cat--before");
+const after = document.querySelector(".example__cat--after");
 
-scale.oninput = function () {
-    scaleValue.textContent = scale.value;
-    scale.style.width = scale.value + '%';
-    beforeImg.style.width = scale.value + '%';
-    afterImg.style.width = scale.value  + '%';
-    afterImg.style.left = (scale.value - 20) + '%';
-};
+function setValue(value) {
+  before.style.width = value + "%";
+  after.style.width = 100 - value + "%";
+}
+
+range.addEventListener("input", (event) => {
+  setValue(event.target.value);
+});
+
+setValue(range.value);
