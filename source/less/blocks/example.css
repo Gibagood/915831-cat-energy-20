@@ -295,86 +295,83 @@
     margin-left: -28px;
   }
 }
-.example__before-img {
+.example__image {
   position: absolute;
-  top: 1px;
-  left: -5px;
-  width: 52%;
-  height: 103%;
-  background-image: url("../img/before-mobile@1x.png");
-  background-size: cover;
-  z-index: 10;
+  background-size: 690px 517px;
+  width: 100%;
+  height: 100%;
 }
-@media (min-resolution: 2dppx) {
-  .example__before-img {
+.example__image--before {
+  background-image: url("../img/before-mobile@1x.png");
+  background-size: 311px 232px;
+  background-position: 0;
+  left: 0;
+  width: 50%;
+}
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .example__image--before {
     background-image: url("../img/before-mobile@2x.png");
   }
 }
 @media (min-width: 768px) {
-  .example__before-img {
-    height: 100%;
-    width: 50.3%;
-    top: 0;
-    left: -2.5px;
+  .example__image--before {
+    background-position: 0;
+    left: 0;
+    width: 50%;
     background-image: url("../img/before-tablet@1x.png");
+    background-size: 690px 517px;
   }
 }
-@media (min-width: 768px) and (min-resolution: 2dppx) {
-  .example__before-img {
+@media (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+  .example__image--before {
     background-image: url("../img/before-tablet@2x.png");
   }
 }
 @media (min-width: 1440px) {
-  .example__before-img {
-    width: 53.6%;
-    left: 8.5px;
+  .example__image--before {
     background-image: url("../img/before-desktop@1x.png");
+    background-size: 690px 517px;
   }
 }
-@media (min-width: 1440px) and (min-resolution: 2dppx) {
-  .example__before-img {
+@media (min-width: 1440px) and (min-resolution: 192dpi), (min-width: 1440px) and (min-resolution: 2dppx) {
+  .example__image--before {
     background-image: url("../img/before-desktop@2x.png");
   }
 }
-.example__after-img {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 49.8%;
-  height: 100%;
+.example__image--after {
+  background-position: 100%;
+  right: 0;
+  width: 50%;
   background-image: url("../img/after-mobile@1x.png");
-  background-size: cover;
-  background-position-x: 101%;
-  z-index: 20;
+  background-size: 311px 232px;
 }
-@media (min-resolution: 2dppx) {
-  .example__after-img {
-    background-image: url("../../img/after-mobile@2x.png");
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .example__image--after {
+    background-image: url("../img/after-mobile@2x.png");
   }
 }
 @media (min-width: 768px) {
-  .example__after-img {
-    top: 0;
-    left: 50%;
-    width: 52.8%;
+  .example__image--after {
+    background-position: 100%;
+    right: 0;
+    width: 50%;
     background-image: url("../img/after-tablet@1x.png");
-    background-position-x: 101%;
+    background-size: 690px 517px;
   }
 }
-@media (min-width: 768px) and (min-resolution: 2dppx) {
-  .example__after-img {
+@media (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+  .example__image--after {
     background-image: url("../img/after-tablet@2x.png");
   }
 }
 @media (min-width: 1440px) {
-  .example__after-img {
-    left: 54.9%;
-    width: 48.2%;
+  .example__image--after {
     background-image: url("../img/after-desktop@1x.png");
+    background-size: 690px 517px;
   }
 }
-@media (min-width: 1440px) and (min-resolution: 2dppx) {
-  .example__after-img {
+@media (min-width: 1440px) and (min-resolution: 192dpi), (min-width: 1440px) and (min-resolution: 2dppx) {
+  .example__image--after {
     background-image: url("../img/after-desktop@2x.png");
   }
 }
@@ -433,25 +430,14 @@
 }
 @media (min-width: 768px) {
   .example__scale-input {
-    position: relative;
-    width: 429px;
+    outline: none;
+    flex-grow: 1;
+    box-sizing: border-box;
+    margin: 0 24px;
+    appearance: none;
     height: 6px;
     background: #cdcdcd;
-    border: none;
     border-radius: 6px;
-    margin: 0;
-    margin-left: 19px;
-    margin-top: -8px;
-  }
-  .example__scale-input::before {
-    content: "";
-    top: -1px;
-    left: 210px;
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background-color: #68b738;
-    border-radius: 50%;
   }
 }
 .example__scale-input::-webkit-slider-thumb {
@@ -463,14 +449,16 @@
 }
 @media (min-width: 768px) {
   .example__scale-input::-webkit-slider-thumb {
-    width: 33px;
-    height: 33px;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 50px;
+    width: 34px;
+    height: 34px;
+    background: #68b738;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+    border-radius: 50%;
+    box-shadow: #ffffff 0 0 0 12px inset;
   }
 }
-.example__scale-input::-moz-range-thumb {
+.example__scale-input::-moz-slider-thumb {
   appearance: none;
   cursor: pointer;
   width: 0;
@@ -478,29 +466,65 @@
   border: none;
 }
 @media (min-width: 768px) {
-  .example__scale-input::-moz-range-thumb {
-    width: 33px;
-    height: 33px;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 50px;
+  .example__scale-input::-moz-slider-thumb {
+    width: 34px;
+    height: 34px;
+    background: #68b738;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+    border-radius: 50%;
+    box-shadow: #ffffff 0 0 0 12px inset;
+  }
+}
+.example__scale-input::-ms-slider-thumb {
+  appearance: none;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border: none;
+}
+@media (min-width: 768px) {
+  .example__scale-input::-ms-slider-thumb {
+    width: 34px;
+    height: 34px;
+    background: #68b738;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+    border-radius: 50%;
+    box-shadow: #ffffff 0 0 0 12px inset;
+  }
+}
+.example__scale-input::-o-slider-thumb {
+  appearance: none;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border: none;
+}
+@media (min-width: 768px) {
+  .example__scale-input::-o-slider-thumb {
+    width: 34px;
+    height: 34px;
+    background: #68b738;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+    border-radius: 50%;
+    box-shadow: #ffffff 0 0 0 12px inset;
   }
 }
 .example__range {
-  margin-top: 2px;
+  /* margin-top: 2px;
   margin-left: 6px;
-  background: #ffffff;
-  border: 1px solid #cdcdcd;
+  background: @basic_white;
+  border: 1px solid @special_grey-1;
   box-sizing: border-box;
   border-radius: 6px;
   height: 14px;
-  width: 84px;
+  width: 84px; */
 }
 @media (min-width: 768px) {
   .example__range {
-    width: auto;
-    border: none;
-    height: 0;
-    margin-left: -14px;
+    width: 100%;
+    display: flex;
   }
 }

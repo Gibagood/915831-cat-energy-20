@@ -123,13 +123,13 @@
   height: 60px;
   background-color: #68b738;
   background-image: url("../img/advantage-leaf@1x.png");
+  background-size: 26px 26px;
   background-repeat: no-repeat;
   background-position: center;
 }
-@media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .advantages__item--nutrients::before {
     background-image: url("../img/advantage-leaf@2x.png");
-    background-size: 50px 50px;
   }
 }
 @media (min-width: 768px) {
@@ -170,13 +170,13 @@
   height: 60px;
   background-color: #68b738;
   background-image: url("../img/advantage-powder@1x.png");
+  background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position: center;
 }
-@media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .advantages__item--flour::before {
     background-image: url("../img/advantage-powder@2x.png");
-    background-size: 50px 50px;
   }
 }
 @media (min-width: 768px) {
@@ -217,13 +217,13 @@
   height: 60px;
   background-color: #68b738;
   background-image: url("../img/advantage-dining@1x.png");
+  background-size: 26px 26px;
   background-repeat: no-repeat;
   background-position: center;
 }
-@media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .advantages__item--eating::before {
     background-image: url("../img/advantage-dining@2x.png");
-    background-size: 50px 50px;
   }
 }
 @media (min-width: 768px) {
@@ -264,13 +264,13 @@
   height: 60px;
   background-color: #68b738;
   background-image: url("../img/advantage-clock@1x.png");
+  background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position: center;
 }
-@media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .advantages__item--better::before {
     background-image: url("../img/advantage-clock@2x.png");
-    background-size: 50px 50px;
   }
 }
 @media (min-width: 768px) {

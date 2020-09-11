@@ -1,6 +1,6 @@
-const range = document.querySelector(".example__input-range");
-const before = document.querySelector(".example__cat--before");
-const after = document.querySelector(".example__cat--after");
+const range = document.querySelector(".example__scale-input");
+const before = document.querySelector(".example__image--before");
+const after = document.querySelector(".example__image--after");
 
 function setValue(value) {
   before.style.width = value + "%";
