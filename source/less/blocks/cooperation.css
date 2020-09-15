@@ -10,6 +10,9 @@
 .main-menu-active {
   color: rgba(0, 0, 0, 0.3);
 }
+.invalid {
+  border: 2px solid #ff8282;
+}
 .cooperation {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -71,7 +74,7 @@
   line-height: 20px;
   color: #444444;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 @media (min-width: 768px) {
   .cooperation__address-street {
@@ -80,9 +83,11 @@
     text-align: right;
   }
 }
-@media (min-width: 768px) {
-  .cooperation__address-city {
-    margin-top: 20px;
+@media (min-width: 1440px) {
+  .cooperation__address-street {
+    width: 155px;
+    text-align: left;
+    padding-right: 53px;
   }
 }
 @media (min-width: 768px) {
@@ -90,7 +95,7 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
-    margin-top: 4px;
+    margin-top: 20px;
   }
 }
 @media (min-width: 1440px) {
@@ -98,13 +103,5 @@
     width: 155px;
     text-align: left;
     padding-right: 53px;
-  }
-}
-.cooperation__address br {
-  display: none;
-}
-@media (min-width: 768px) {
-  .cooperation__address br {
-    display: block;
   }
 }

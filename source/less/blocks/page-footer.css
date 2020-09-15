@@ -10,6 +10,9 @@
 .main-menu-active {
   color: rgba(0, 0, 0, 0.3);
 }
+.invalid {
+  border: 2px solid #ff8282;
+}
 .page-footer {
   display: flex;
   flex-direction: column;
@@ -25,7 +28,7 @@
     align-items: center;
     min-height: 150px;
     padding-left: 3.91vw;
-    padding-right: 3.91vw;
+    padding-right: 1.8vw;
   }
 }
 @media (min-width: 1440px) {

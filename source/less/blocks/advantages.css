@@ -10,6 +10,9 @@
 .main-menu-active {
   color: rgba(0, 0, 0, 0.3);
 }
+.invalid {
+  border: 2px solid #ff8282;
+}
 .advantages {
   min-width: 280px;
   margin-left: 6.25vw;
@@ -23,6 +26,7 @@
     align-items: center;
     min-width: 629px;
     margin-left: 3.91vw;
+    margin-right: 4.25vw;
     margin-bottom: 44px;
   }
 }

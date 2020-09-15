@@ -10,6 +10,9 @@
 .main-menu-active {
   color: rgba(0, 0, 0, 0.3);
 }
+.invalid {
+  border: 2px solid #ff8282;
+}
 .cat-habits {
   margin: 0;
   margin-left: 6.25vw;
@@ -31,7 +34,7 @@
 }
 .cat-habits__title {
   margin: 0;
-  margin-bottom: 41px;
+  margin-bottom: 35px;
   padding: 0;
   padding-right: 21px;
   line-height: 10px;
@@ -42,7 +45,7 @@
     padding-left: 38px;
     padding-right: 40px;
     margin-left: 3.9vw;
-    margin-bottom: 72px;
+    margin-bottom: 68px;
     line-height: 22px;
   }
 }
@@ -51,7 +54,7 @@
     padding-left: 40px;
     padding-right: 41px;
     padding-bottom: 5px;
-    margin-bottom: 77px;
+    margin-bottom: 74px;
     margin-left: 4.89vw;
   }
 }

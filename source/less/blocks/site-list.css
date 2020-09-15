@@ -74,6 +74,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .site-list__link {

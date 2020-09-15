@@ -4,7 +4,7 @@ const after = document.querySelector(".example__image--after");
 
 function setValue(value) {
   before.style.width = value + "%";
-  after.style.width = 100 - value + "%";
+  after.style.width = 102.5 - value + "%";
 }
 
 range.addEventListener("input", (event) => {

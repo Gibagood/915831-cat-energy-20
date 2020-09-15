@@ -19,7 +19,7 @@
     border: none;
     padding-top: 0;
     padding-left: 7.64vw;
-    padding-right: 4.9vw;
+    padding-right: 5.5vw;
     background-color: @special_grey-4;
     margin-top: 203px;
   }
@@ -32,7 +32,7 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 3.91vw;
-    padding-right: 3.91vw;
+    padding-right: 1.91vw;
     margin-bottom: 81px;
   }
 
@@ -285,31 +285,30 @@
 
 .example__image--before {
   .retina-image("../img/before-mobile@1x.png", "../img/before-mobile@2x.png", 311px, 232px);
-  background-position: 0;
-  left: 0;
-  width: 50%;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     background-position: 0;
-    left: 0;
+    left: 9px;
     width: 50%;
     .retina-image("../img/before-tablet@1x.png", "../img/before-tablet@2x.png", 690px, 517px);
   }
 
   @media (min-width: @desktop-width) {
+    left: 17px;
     .retina-image("../img/before-desktop@1x.png", "../img/before-desktop@2x.png", 690px, 517px);
   }
 }
 
 .example__image--after {
-  background-position: 100%;
-  right: 0;
-  width: 50%;
+  display: none;
+  width: 100%;
   .retina-image("../img/after-mobile@1x.png", "../img/after-mobile@2x.png", 311px, 232px);
 
   @media (min-width: @tablet-width) {
+    display: block;
     background-position: 100%;
-    right: 0;
+    right: -23px;
     width: 50%;
     .retina-image("../img/after-tablet@1x.png", "../img/after-tablet@2x.png", 690px, 517px);
   }
@@ -353,17 +352,17 @@
     font-size: 20px;
     line-height: 30px;
     margin-bottom: -11px;
-    margin-left: 19px;
-    margin-right: 20px;
+    margin-left: 7px;
+    margin-right: -7px;
     border-bottom: dotted 1px @dotted_color;
   }
 }
 
 .example__scale-input {
-  appearance: none;
   display: block;
   width: 35px;
   height: 6px;
+  appearance: none;
   background: @basic_green;
   border: none;
   box-sizing: border-box;
@@ -372,11 +371,13 @@
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
+    min-width: 428px;
+    display: block;
+    appearance: none;
     outline: none;
     flex-grow: 1;
     box-sizing: border-box;
-    margin: 0 24px;
-    appearance: none;
+    margin: 0 11px 0 33px;
     height: 6px;
     background: @special_grey-1;
     border-radius: 6px;
@@ -456,17 +457,20 @@
 }
 
 .example__range {
-  /* margin-top: 2px;
+  margin-top: 2px;
   margin-left: 6px;
   background: @basic_white;
   border: 1px solid @special_grey-1;
   box-sizing: border-box;
   border-radius: 6px;
   height: 14px;
-  width: 84px; */
+  min-width: 84px;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    height: auto;
     display: flex;
+    margin: 0;
+    background: none;
+    border: none;
   }
 }

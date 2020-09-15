@@ -252,3 +252,6 @@
     left: 134px;
   }
 }
+.diet__link:active::before {
+  filter: opacity(30%);
+}

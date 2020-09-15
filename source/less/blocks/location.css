@@ -10,6 +10,9 @@
 .main-menu-active {
   color: rgba(0, 0, 0, 0.3);
 }
+.invalid {
+  border: 2px solid #ff8282;
+}
 @media (min-width: 1440px) {
   .location {
     position: relative;
@@ -22,7 +25,7 @@
 @media (min-width: 768px) {
   .location__cooperation {
     padding-left: 9.3vw;
-    padding-right: 9.3vw;
+    padding-right: 7.2vw;
   }
 }
 @media (min-width: 1440px) {
