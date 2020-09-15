@@ -10,6 +10,9 @@
 .main-menu-active {
   color: rgba(0, 0, 0, 0.3);
 }
+.invalid {
+  border: 2px solid #ff8282;
+}
 .promo {
   position: relative;
   min-width: 280px;
