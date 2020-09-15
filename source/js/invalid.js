@@ -1,9 +1,17 @@
-let formButton = document.querySelector (".form__button");
-let input = document.querySelector (".cat-data__input");
+const formButton = document.querySelector(".form__button");
+const inputs = document.querySelectorAll(".validate-input");
 
-formButton.addEventListener("submit", function (evt) {
-  if (!input.value) {
-        evt.preventDefault();
-        feedbackForm.classList.add("invalid");
-      }
-})
+formButton.addEventListener("click", function (evt) {
+  for (let i = 0; i < inputs.length; i++) {
+    if (!inputs[i].value) {
+      evt.preventDefault();
+      inputs[i].classList.add("validate-input--invalid");
+    }
+  }
+});
+
+for (let i = 0; i < inputs.length; i++) {
+  inputs[i].addEventListener('click', function() {
+    this.classList.remove("validate-input--invalid")
+  });
+}
