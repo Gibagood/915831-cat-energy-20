@@ -12,6 +12,7 @@
     align-items: center;
     min-width: 629px;
     margin-left: 3.91vw;
+    margin-right: 4.25vw;
     margin-bottom: 44px;
   }
 
@@ -37,7 +38,7 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    margin-left: -298px;
+    margin-left: -315px;
     margin-bottom: 34px;
   }
 
@@ -66,7 +67,7 @@
     row-gap: 37px;
     padding: 0;
     justify-content: flex-end;
-    margin-left: 306px;
+    margin-left: 289px;
   }
 
   @media (min-width: @desktop-width) {
@@ -107,13 +108,9 @@
     width: 60px;
     height: 60px;
     background-color: @basic_green;
-    background-image: url("../img/advantage-leaf@1x.png");
+    .retina-image("../img/advantage-leaf@1x.png", "../img/advantage-leaf@2x.png", 26px, 26px);
     background-repeat: no-repeat;
     background-position: center;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/advantage-leaf@2x.png");
-    }
 
     @media (min-width: @tablet-width) {
       width: 80px;
@@ -153,13 +150,9 @@
     width: 60px;
     height: 60px;
     background-color: @basic_green;
-    background-image: url("../img/advantage-powder@1x.png");
+    .retina-image("../img/advantage-powder@1x.png", "../img/advantage-powder@2x.png", 30px, 30px);
     background-repeat: no-repeat;
     background-position: center;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/advantage-powder@2x.png");
-    }
 
     @media (min-width: @tablet-width) {
       width: 80px;
@@ -198,13 +191,9 @@
     width: 60px;
     height: 60px;
     background-color: @basic_green;
-    background-image: url("../img/advantage-dining@1x.png");
+    .retina-image("../img/advantage-dining@1x.png", "../img/advantage-dining@2x.png", 26px, 26px);
     background-repeat: no-repeat;
     background-position: center;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/advantage-dining@2x.png");
-    }
 
     @media (min-width: @tablet-width) {
       width: 80px;
@@ -243,13 +232,9 @@
     width: 60px;
     height: 60px;
     background-color: @basic_green;
-    background-image: url("../img/advantage-clock@1x.png");
+    .retina-image("../img/advantage-clock@1x.png", "../img/advantage-clock@2x.png", 30px, 30px);
     background-repeat: no-repeat;
     background-position: center;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/advantage-clock@2x.png");
-    }
 
     @media (min-width: @tablet-width) {
       width: 80px;

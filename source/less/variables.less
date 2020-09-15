@@ -66,3 +66,17 @@
 .main-menu-active {
   color: fade(@basic_black, 30%);
 }
+
+.retina-image(@file-1x, @file-2x, @width-1x, @height-1x) {
+  background-image: url("@{file-1x}");
+  background-size: @width-1x @height-1x;
+
+  @media (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("@{file-2x}");
+  }
+}
+
+.invalid {
+  border: 2px solid @status_error;
+}

@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 24px;
-    margin-right: 1.67vw;
+    margin-right: 1.91vw;
     margin-left: 3.91vw;
     margin-bottom: 61px;
   }
@@ -88,11 +88,16 @@
 .page-header__button {
   position: relative;
   display: block;
-  padding: 0;
   border: none;
   cursor: pointer;
   margin-left: 18px;
   margin-top: 4px;
+  width: 24px;
+  height: 24px;
+  top: -10px;
+  padding: 5px;
+  box-sizing: content-box;
+  background: transparent;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -102,8 +107,8 @@
 .page-header__button.page-header__button--close::before {
   content: "";
   position: absolute;
-  top: -10px;
-  left: 0;
+  top: 5px;
+  left: 5px;
   background-color: @basic_black;
   width: 24px;
   height: 1.5px;
@@ -118,8 +123,9 @@
   background-color: @basic_black;
   transform: rotate(45deg);
   box-shadow: none;
-  margin-left: 43px;
-  margin-bottom: 5px;
+  margin-left: 42px;
+  margin-bottom: -14px;
+  padding: 0;
 
   &::before {
     content: "";
