@@ -347,6 +347,10 @@
   color: @basic_black;
   margin-left: 17px;
   margin-right: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -355,6 +359,14 @@
     margin-left: 7px;
     margin-right: -7px;
     border-bottom: dotted 1px @dotted_color;
+
+    &:hover {
+      border-bottom: solid 1px @dotted_color;
+    }
+
+    &:active {
+      border-bottom: solid 1px transparent;
+    }
   }
 }
 
@@ -399,6 +411,16 @@
     box-sizing: border-box;
     border-radius: 50%;
     box-shadow: @basic_white 0 0 0 12px inset;
+    filter: drop-shadow(0 1px 3px @dotted_color);
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px @dotted_color);
+    }
+
+
+    &:active {
+      border: solid 1px @basic_green;
+    }
   }
 }
 
@@ -417,6 +439,16 @@
     box-sizing: border-box;
     border-radius: 50%;
     box-shadow: @basic_white 0 0 0 12px inset;
+    filter: drop-shadow(0 1px 3px @dotted_color);
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px @dotted_color);
+    }
+
+
+    &:active {
+      border: solid 1px @basic_green;
+    }
   }
 }
 
@@ -435,6 +467,16 @@
     box-sizing: border-box;
     border-radius: 50%;
     box-shadow: @basic_white 0 0 0 12px inset;
+    filter: drop-shadow(0 1px 3px @dotted_color);
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px @dotted_color);
+    }
+
+
+    &:active {
+      border: solid 1px @basic_green;
+    }
   }
 }
 
@@ -453,6 +495,16 @@
     box-sizing: border-box;
     border-radius: 50%;
     box-shadow: @basic_white 0 0 0 12px inset;
+    filter: drop-shadow(0 1px 3px @dotted_color);
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px @dotted_color);
+    }
+
+    &:active {
+      border: solid 1px @basic_green;
+      filter: drop-shadow(0 2px 4px @dotted_color);
+    }
   }
 }
 

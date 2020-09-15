@@ -59,6 +59,7 @@
 }
 
 .cat-owner__item {
+  position: relative;
   display: grid;
   grid-template-columns: min-content auto;
   align-items: center;
@@ -86,38 +87,34 @@
   }
 }
 
+.cat-owner__label--mail-img {
+  position: absolute;
+  top: 16px;
+  left: 76.5vw;
+  width: 20px;
+  height: 14px;
+
+  @media (min-width: @tablet-width) {
+    width: 21px;
+    height: 14px;
+    top: 19px;
+    left: 77.4vw;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 18px;
+    left: 36.95vw;
+    width: 19px;
+    height: 16px;
+  }
+}
+
 .cat-owner__label--mail {
   position: relative;
   min-width: 50px;
 
   @media (min-width: @tablet-width) {
     margin-right: 7px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 76.9vw;
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 20px;
-    height: 14px;
-
-    @media (min-width: @tablet-width) {
-      width: 21px;
-      height: 14px;
-      top: 7px;
-      left: 77.5vw;
-    }
-
-    @media (min-width: @desktop-width) {
-      top: 7px;
-      left: 36.95vw;
-      width: 19px;
-      height: 16px;
-    }
   }
 }
 
@@ -127,31 +124,27 @@
   @media (min-width: @desktop-width) {
     margin-right: 3px;
   }
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 77.31vw;
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 20px;
-    height: 28px;
+.cat-owner__label--phone-img {
+  position: absolute;
+  top: 14px;
+  left: 77.31vw;
+  width: 20px;
+  height: 28px;
 
-    @media (min-width: @tablet-width) {
-      width: 24px;
-      height: 19px;
-      top: 5px;
-      left: 77.61vw;
-    }
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 19px;
+    top: 16px;
+    left: 77.5vw;
+  }
 
-    @media (min-width: @desktop-width) {
-      top: 5px;
-      left: 37.1vw;
-      width: 25px;
-      height: 20px;
-    }
+  @media (min-width: @desktop-width) {
+    top: 15px;
+    left: 37.1vw;
+    width: 25px;
+    height: 20px;
   }
 }
 
@@ -159,6 +152,14 @@
   .input-form;
   .form-desc;
   padding-left: 14px;
+
+  &:focus ~ .cat-owner__label--mail-img {
+    fill: @basic_green;
+  }
+
+  &:focus ~ .cat-owner__label--phone-img {
+    fill: @basic_green;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
