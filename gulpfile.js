@@ -16,10 +16,12 @@ const minify = require("gulp-minify");
 
 // Clean
 // Тут мы удаляем папку build и всё его содержимое
-const clean = cb => fs.rmdir("build", { recursive: true }, err => {
-  if (err) cb(err);
-  else cb();
-});
+function clean(cb) {
+  fs.rmdir("build", { recursive: true }, cb);
+};
+exports.clean = clean;
+
+exports.clean = clean;
 
 // Style
 // Тут мы берём наши LESS файлы и превращаем их в CSS, минифицируем и сохраняем в build/css
