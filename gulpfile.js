@@ -21,8 +21,6 @@ function clean(cb) {
 };
 exports.clean = clean;
 
-exports.clean = clean;
-
 // Style
 // Тут мы берём наши LESS файлы и превращаем их в CSS, минифицируем и сохраняем в build/css
 const styles = () => {
