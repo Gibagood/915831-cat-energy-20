@@ -16,7 +16,9 @@ const minify = require("gulp-minify");
 
 // Clean
 // Тут мы удаляем папку build и всё его содержимое
-const clean = cb => fs.rmdir("build", { recursive: true }, err => cb(err));
+function clean(cb) {
+  fs.rmdir("build", { recursive: true }, cb);
+};
 exports.clean = clean;
 
 // Style

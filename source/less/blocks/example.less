@@ -301,7 +301,6 @@
 }
 
 .example__image--after {
-  display: none;
   width: 100%;
   .retina-image("../img/after-mobile@1x.png", "../img/after-mobile@2x.png", 311px, 232px);
 
@@ -345,16 +344,32 @@
   text-align: center;
   text-transform: uppercase;
   color: @basic_black;
-  margin-left: 17px;
-  margin-right: 12px;
+  margin-left: 11px;
+  margin-right: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: -11px;
-    margin-left: 7px;
-    margin-right: -7px;
+    margin-left: 2px;
+    margin-right: -13px;
     border-bottom: dotted 1px @dotted_color;
+
+    &:hover {
+      border-bottom: solid 1px @dotted_color;
+    }
+
+
+    &:active {
+      border-bottom: solid 1px transparent;
+    }
   }
 }
 
@@ -368,7 +383,6 @@
   box-sizing: border-box;
   border-radius: 6px;
   margin: 3px 5px;
-  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     min-width: 428px;
@@ -381,6 +395,7 @@
     height: 6px;
     background: @special_grey-1;
     border-radius: 6px;
+    cursor: pointer;
   }
 }
 
@@ -399,6 +414,16 @@
     box-sizing: border-box;
     border-radius: 50%;
     box-shadow: @basic_white 0 0 0 12px inset;
+    filter: drop-shadow(0 1px 3px @dotted_color);
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px @dotted_color);
+    }
+
+
+    &:active {
+      border: solid 1px @basic_green;
+    }
   }
 }
 
@@ -417,6 +442,16 @@
     box-sizing: border-box;
     border-radius: 50%;
     box-shadow: @basic_white 0 0 0 12px inset;
+    filter: drop-shadow(0 1px 3px @dotted_color);
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px @dotted_color);
+    }
+
+
+    &:active {
+      border: solid 1px @basic_green;
+    }
   }
 }
 
@@ -435,6 +470,16 @@
     box-sizing: border-box;
     border-radius: 50%;
     box-shadow: @basic_white 0 0 0 12px inset;
+    filter: drop-shadow(0 1px 3px @dotted_color);
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px @dotted_color);
+    }
+
+
+    &:active {
+      border: solid 1px @basic_green;
+    }
   }
 }
 
@@ -453,6 +498,16 @@
     box-sizing: border-box;
     border-radius: 50%;
     box-shadow: @basic_white 0 0 0 12px inset;
+    filter: drop-shadow(0 1px 3px @dotted_color);
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px @dotted_color);
+    }
+
+    &:active {
+      border: solid 1px @basic_green;
+      filter: drop-shadow(0 2px 4px @dotted_color);
+    }
   }
 }
 
